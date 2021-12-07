@@ -1,0 +1,17 @@
+What draws you to coding and web development as a career?
+He likes building things from the ground up. So he wants to learn more with the front and back end of web development
+
+What are your greatest strengths? Weaknesses?
+He is a great leader and problem solver. As for weakness he tends to over think things.
+
+How has your background helped prepare you for web development (technical and non-technical)?
+He has about 7 years experince in this relm. Has taken classes here and there. Also has military experince
+
+Describe your dream job in web development.
+His dream job is to be a Full Stack Web Development. Mostly building the front and back end.
+
+What technologies interest you, web development/coding-related, and otherwise?
+Definitely building the websites and software development
+
+What online resources do you use to to get the latest info/news on technology?
+He uses Google and Youtube alot. Also uses Udemy for courses like JS and what not.
