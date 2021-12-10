@@ -86,9 +86,9 @@ if (course > 17 || !doesNotConflict){
 }
 
 
-let product = 3, discount = .50, items = 4, price = 3
+let product = 3, discount = .50, items = 4, price = 3;
 let equal;
-let pay
+let pay;
 if(product < items){
     pay = (price * discount);
     equal = price - pay;

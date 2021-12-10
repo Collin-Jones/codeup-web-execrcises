@@ -1,3 +1,5 @@
+//Just hands on practice from the class. Helps me learn better if I actually type it out while listening.
+
 // let num1 = 22;
 // console.log(num1++); // post-increment
 // // num1 original value is output to the console,
@@ -50,14 +52,37 @@
 
 //Must have a credit score over 680 and have at least $4000 on-hand
 //OR, they must have at least $10000 on-hand
-let creditScore = 720;
-let cashOnHand = 5000;
-if ((cashOnHand >= 4000 && creditScore >= 680)) {
-    console.log("\n Will be able to extend the auto loan");
-} else if (cashOnHand >= 10000) {
-    console.log("\n Will not be able to extend the auto loan");
-}
+// let creditScore = 720;
+// let cashOnHand = 5000;
+// if ((cashOnHand >= 4000 && creditScore >= 680)) {
+//     console.log("\n Will be able to extend the auto loan");
+// } else if (cashOnHand >= 10000) {
+//     console.log("\n Will not be able to extend the auto loan");
+// }
 
+//just hands on practice for myself.
+// function wakeUp(){
+//     console.log("Collin waking up")
+// }
+//
+// function getEggs() {
+//     console.log("\nTurn on the stove")
+//     console.log("\nTurn dial to the right temp")
+//     console.log("\nGet the eggs out of the fridge")
+//     console.log("\nCook eggs")
+// }
+//
+// getEggs()
 
-
+//Argument and Parameters
+// function cubed(x){
+//     return x * x * x;
+// }
+// console.log(cubed(8));
+//
+// var increment = function(x) {
+//     return x + 1;
+// };
+//
+// var two = increment(1);
 
