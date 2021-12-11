@@ -52,14 +52,13 @@
 
 //Must have a credit score over 680 and have at least $4000 on-hand
 //OR, they must have at least $10000 on-hand
-// let creditScore = 720;
-// let cashOnHand = 5000;
-// if ((cashOnHand >= 4000 && creditScore >= 680)) {
-//     console.log("\n Will be able to extend the auto loan");
-// } else if (cashOnHand >= 10000) {
-//     console.log("\n Will not be able to extend the auto loan");
-// }
-
+let creditScore = 500;
+let cashOnHand = 2000;
+if ((cashOnHand > 4000 || creditScore > 680)) {
+    console.log("\n Will be able to extend the auto loan");
+} else{
+    console.log("\n Will not be able to extend the auto loan");
+}
 //just hands on practice for myself.
 // function wakeUp(){
 //     console.log("Collin waking up")

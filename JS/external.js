@@ -14,7 +14,7 @@ if (time >= 12 || time < 9){
 }
 
 let item = prompt("In order for the discount to be applied, you must buy more than two items. How many items did you buy?");
-if (item >= 2 || item <= 1){
+if (item >= 2 || item >= 2){
     alert("Discount will be applied.")
 }else {
     alert("Discount will not be applied.")
