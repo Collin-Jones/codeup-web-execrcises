@@ -20,31 +20,3 @@
 //     alert("Discount will not be applied.")
 // }
 
-"use strict";
-
-function sayHello(name){
-    return ("Hello, " + name + "!")
-}
-console.log(sayHello("Collin"))
-
-var helloMessage = sayHello("Collin")
-console.log(helloMessage)
-
-var myName = "Collin"
-console.log(sayHello(myName))
-
-var random = Math.floor((Math.random() * 3) + 1);
-function isTwo(x) {
-    if (x === 2) {
-        return true
-    } else {
-        return false
-    }
-}
-console.log(isTwo(random))
-
-function calculateTip(x) {
-    if (x = .20);
-    return(x * 20)
-}
-console.log(calculateTip())
