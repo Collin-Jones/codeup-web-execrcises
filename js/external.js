@@ -1,6 +1,6 @@
 // console.log("Hello from external JavaScript")
 
-alert("Welcome to my website!")
+// alert("Welcome to my website!")
 
 // let input = prompt("What is your favorite color?")
 // console.log("Great, " + input + " is my favorite color too!")
@@ -42,3 +42,9 @@ function isTwo(x) {
     }
 }
 console.log(isTwo(random))
+
+function calculateTip(x) {
+    if (x = .20);
+    return(x * 20)
+}
+console.log(calculateTip())
