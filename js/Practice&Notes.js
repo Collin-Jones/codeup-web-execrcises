@@ -95,13 +95,17 @@
 // var helloMessage = sayHello("Collin")
 // console.log(helloMessage)
 
+//
+// function isFive(x){
+//     if (x = 5) {
+//         return true
+//     } else {
+//         return false
+//     }
+//
+// }
+// console.log(isFive())
 
-function isFive(x){
-    if (x = 5) {
-        return true
-    } else {
-        return false
-    }
-
-}
-console.log(isFive())
+// = is used for assigning values to a variable in JavaScript.
+// == is used for comparison between two variables irrespective of the datatype of variable.
+// === is used for comparision between two variables but this will check strict type, which means it will check datatype and compare two values.
