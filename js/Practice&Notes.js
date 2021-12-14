@@ -109,3 +109,31 @@
 // = is used for assigning values to a variable in JavaScript.
 // == is used for comparison between two variables irrespective of the datatype of variable.
 // === is used for comparision between two variables but this will check strict type, which means it will check datatype and compare two values.
+
+// var random = Math.floor((Math.random() * 3) +1);
+// function isMultipleOfThree(x) {
+//     if (x === 3) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+//
+// console.log(isMultipleOfThree(random))
+
+// "user strict";
+//
+// function isDivisibleByThree(x) {
+//     return x % 3 === 0;
+// }
+//
+// function isDivisibleByThreev3(x) {
+//     if (x % 3 === 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+//
+// console.log(isDivisibleByThree(2));
+// console.log(isDivisibleByThreev3(2));
