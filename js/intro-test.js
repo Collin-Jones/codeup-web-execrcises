@@ -4,10 +4,22 @@
 // return a false in the event the argument given is not a string
 // Account for: numbers, booleans, undefined, null
 
-
+// Scott and Daniel helped me out with this which was nice of them.
 function count(input){
-
-    return input.length
+    if (typeof input !== 'string'){
+        return false;
+    }else {
+        return input.length;
+    }
 }
+
+function testCount(countInput){
+    let acutalCount = count("Hello I am a robot.");
+
+    let expectedCount = 17;
+
+    console.log("The acutal length is equal to the expected length: " + (acutalCount === expectedCount));
+}
+testCount();
 
 console.log(count("Hello I am a robot."))

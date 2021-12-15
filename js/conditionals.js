@@ -207,24 +207,24 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 let input = confirm("Do you want to enter any number?");
 if (input === true){
-    let userAnswer = prompt("What is the number?")
-    let parseIntAnswer = parseInt(userAnswer)
+    let userAnswer = prompt("What is the number?");
+    let parseIntAnswer = parseInt(userAnswer);
     if (isNaN(parseIntAnswer)){
-        alert("You didn't type in a number.")
+        alert("You didn't type in a number.");
     }else {
-        alert("You did put a number")
+        alert("You did put a number");
         if (parseIntAnswer % 2 === 0){
-            alert("This is even.")
+            alert("This is even.");
         }else {
-            alert("This is odd.")
+            alert("This is odd.");
         }
 
-        alert(parseIntAnswer + 100)
+        alert(parseIntAnswer + 100);
 
         if (parseIntAnswer < 0 ){
-            alert("This is negative")
+            alert("This is negative");
         }else{
-            alert("This is positive")
+            alert("This is positive");
         }
     }
 }
