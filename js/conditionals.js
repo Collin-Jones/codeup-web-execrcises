@@ -212,7 +212,7 @@ if (input === true){
     if (isNaN(parseIntAnswer)){
         alert("You didn't type in a number.")
     }else {
-        // alert("You did put a number")
+        alert("You did put a number")
         if (parseIntAnswer % 2 === 0){
             alert("This is even.")
         }else {
