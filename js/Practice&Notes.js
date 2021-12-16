@@ -137,3 +137,47 @@
 //
 // console.log(isDivisibleByThree(2));
 // console.log(isDivisibleByThreev3(2));
+
+
+
+//Loops section
+// let wallet = 32;
+// let priceOfwater = 11;
+//
+// while(wallet >= priceOfwater){
+//
+//     console.log('*********');
+//     console.log("I'd like to buy your very reasonably priced refreshment!");
+//     console.log("them : we are fair and reasonable. Enjoy!");
+//     console.log("wallet currently: " + wallet)
+// }
+// console.log("If you ain't got no money, take yo broke ... home")
+
+// let counter = 0;
+//
+// while (counter <= 25){
+//     if (counter % 2 === 0){
+//         console.log(counter)
+//     }
+//     counter++;
+//}
+
+let counter = 0;
+
+while (counter <= 25){
+    if (counter % 2 !== 0){
+        console.log(counter)
+    }
+    counter++;
+}
+
+
+
+
+
+
+
+
+
+
+
