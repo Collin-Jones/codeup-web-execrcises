@@ -171,17 +171,35 @@
 // }
 //
 
-function isName(name) {
-    if (name === "Collin") {
-        return true;
-    } else {
-        return false;
+// function isName(name) {
+//     if (name === "Collin") {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(isName(name))
+
+
+
+let input = prompt("Enter any sea animal.")
+function seaCreatures(animals) {
+    switch (animals) {
+        case "Octopus":
+            return "What has 8 legs and looks like an alien in the sea?"
+            break;
+        case "Whale":
+            return "They are the largest mammal on the planet."
+            break;
+        case "Mantis Shrimp":
+            return "The Mantis Shrimp punches can reach an acceleration of 10,400 g and a velocity of 51 mph (83 km/h). That is around 50 times faster than the blink of an eye."
+            break;
+        default:
+            return "I don't know anything about that animal."
     }
 }
-
-console.log(isName(name))
-
-
+console.log(seaCreatures(input))
+alert(seaCreatures(input))
 
 
 
