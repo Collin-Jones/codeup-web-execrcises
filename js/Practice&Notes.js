@@ -139,7 +139,6 @@
 // console.log(isDivisibleByThreev3(2));
 
 
-
 //Loops section
 // let wallet = 32;
 // let priceOfwater = 11;
@@ -161,20 +160,26 @@
 //     }
 //     counter++;
 //}
+//
+// let counter = 0;
+//
+// while (counter <= 25){
+//     if (counter % 2 !== 0){
+//         console.log(counter)
+//     }
+//     counter++;
+// }
+//
 
-let counter = 0;
-
-while (counter <= 25){
-    if (counter % 2 !== 0){
-        console.log(counter)
+function isName(name) {
+    if (name === "Collin") {
+        return true;
+    } else {
+        return false;
     }
-    counter++;
 }
 
-
-
-
-
+console.log(isName(name))
 
 
 
