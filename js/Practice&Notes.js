@@ -169,7 +169,6 @@
 //     }
 //     counter++;
 // }
-//
 
 // function isName(name) {
 //     if (name === "Collin") {
@@ -181,26 +180,44 @@
 // console.log(isName(name))
 
 
+//
+// let input = prompt("Enter any sea animal.")
+// function seaCreatures(animals) {
+//     switch (animals) {
+//         case "Octopus":
+//             return "What has 8 legs and looks like an alien in the sea?"
+//             break;
+//         case "Whale":
+//             return "They are the largest mammal on the planet."
+//             break;
+//         case "Mantis Shrimp":
+//             return "The Mantis Shrimp punches can reach an acceleration of 10,400 g and a velocity of 51 mph (83 km/h). That is around 50 times faster than the blink of an eye."
+//             break;
+//         default:
+//             return "I don't know anything about that animal."
+//     }
+// }
+// console.log(seaCreatures(input))
+// alert(seaCreatures(input))
 
-let input = prompt("Enter any sea animal.")
-function seaCreatures(animals) {
-    switch (animals) {
-        case "Octopus":
-            return "What has 8 legs and looks like an alien in the sea?"
-            break;
-        case "Whale":
-            return "They are the largest mammal on the planet."
-            break;
-        case "Mantis Shrimp":
-            return "The Mantis Shrimp punches can reach an acceleration of 10,400 g and a velocity of 51 mph (83 km/h). That is around 50 times faster than the blink of an eye."
-            break;
-        default:
-            return "I don't know anything about that animal."
+
+
+// its not working for some reason. Will come back to it later
+let counter = 0;
+function primeNumber (x) {
+    while (primeNumber <= 50) {
+        if ((x === 2) || (x === 3) || (x === 5) || (x === 7) || (x === 9)) {
+            return true;
+        } else {
+            if ((x % 2 !== counter) || (x % 3 !== counter) || (x % 5 !== counter) || (x % 7 !== counter) || (x % 9 !== counter)) {
+                return false;
+            }
+        }
+
+        counter++;
     }
 }
-console.log(seaCreatures(input))
-alert(seaCreatures(input))
 
-
-
+console.log(counter)
+console.log(primeNumber())
 
