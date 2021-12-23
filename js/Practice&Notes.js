@@ -206,11 +206,14 @@
 // its not working for some reason. Will come back to it later
 let counter = 0;
 while (counter <= 50) {
-    if (counter % 2 === 0) ;
-    if ((counter === 2) || (counter === 3) || (counter === 5) || (counter === 7) || (counter === 9)) ;
+    if (counter % 2 === 0) {
+    }
+    if ((counter === 2) || (counter === 3) || (counter === 5) || (counter === 7) || (counter === 9)) {
+
+    }
     if ((counter % 2 !== 0) || (counter % 3 !== 0) || (counter % 5 !== 0) || (counter % 7 !== 0) || (counter % 9 !== 0)) {
         console.log(counter)
     }
-counter++;
+    counter++;
 }
 
