@@ -203,53 +203,63 @@
 // alert(seaCreatures(input))
 
 
-// its not working for some reason. Will come back to it later
-// let counter = 0;
-// while (counter <= 50) {
-//
-//     if ((counter === 2) || (counter === 3) || (counter === 5) || (counter === 7) || (counter === 9)) {
-//
-//     }
-//     if ((counter % 2 !== 0) || (counter % 3 !== 0) || (counter % 5 !== 0) || (counter % 7 !== 0) || (counter % 9 !== 0)) {
-//         console.log(counter)
-//     }
-//     counter++;
+let num = 1;
+let counter = 0;
+while (counter <= 50) {
+    if (isPrime(num)) {
+        console.log(num)
+        num++;
+        counter++;
+    }else{
+        num++;
+    }
+}
+
+
+function isPrime(num) {
+    for (var i = 2; i < num; i++)
+        if (num % i === 0) return false;
+    return num > 1;
+}
+
+
+// function returnTwo(x) {
+//     if (x = 2) ;
+//     return 2;
 // }
+//
+// console.log(returnTwo())
+//
+// function sayHowdy() {
+//     return "Howdy!"
+// }
+//
+// console.log(sayHowdy())
+//
+// function returnName() {
+//     return "Collin"
+// }
+//
+// console.log(returnName())
+//
+// function addThree(x) {
+//     return x + 3
+// }
+//
+// console.log(addThree(5))
+//
+// function sayString() {
+//     return "codeup"
+// }
+//
+// console.log(sayString())
+//
+// function identity(input) {
+//     if (input = "Escape from Tarkov") ;
+//     return input
+// }
+//
+// console.log(identity())
 
-function returnTwo(x) {
-    if (x = 2) ;
-    return 2;
-}
 
-console.log(returnTwo())
 
-function sayHowdy() {
-    return "Howdy!"
-}
-
-console.log(sayHowdy())
-
-function returnName() {
-    return "Collin"
-}
-
-console.log(returnName())
-
-function addThree(x) {
-    return x + 3
-}
-
-console.log(addThree(5))
-
-function sayString() {
-    return "codeup"
-}
-
-console.log(sayString())
-
-function identity(input){
-    if (input = "Escape from Tarkov");
-    return input
-}
-
-console.log(identity())
