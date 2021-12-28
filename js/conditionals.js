@@ -152,36 +152,36 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
+var luckyNumber = Math.floor(Math.random() * 6);
+function calculateTotalv2(number, total) {
 
-// function calculateTotalv2(number, total) {
-//
-//     switch (number) {
-//         case 0:
-//             return "Sorry but you do not get a discount"
-//             break;
-//         case 1:
-//             return total * .90
-//             break;
-//         case 2:
-//             return total * .75
-//             break;
-//         case 3:
-//             return total * .65
-//             break;
-//         case 4:
-//             return total * .50
-//             break;
-//         case 5:
-//             return "Wow look at that! Everything is free!"
-//             break;
-//     }
-// }
-//
-// let inputTotalBill = prompt("Enter the total on the bill.")
-// alert("Your lucky number is " + luckyNumber)
-// alert("Your total bill amount is  " + inputTotalBill)
-// alert(calculateTotalv2(luckyNumber, inputTotalBill ) + " is now your new total.")
-// console.log(calculateTotalv2(luckyNumber, inputTotalBill))
+    switch (number) {
+        case 0:
+            return "Sorry but you do not get a discount"
+            break;
+        case 1:
+            return total * .90
+            break;
+        case 2:
+            return total * .75
+            break;
+        case 3:
+            return total * .65
+            break;
+        case 4:
+            return total * .50
+            break;
+        case 5:
+            return "Wow look at that! Everything is free!"
+            break;
+    }
+}
+
+let inputTotalBill = prompt("Enter the total on the bill.")
+alert("Your lucky number is " + luckyNumber)
+alert("Your total bill amount is  " + inputTotalBill)
+alert(calculateTotalv2(luckyNumber, inputTotalBill ) + " is now your new total.")
+console.log(calculateTotalv2(luckyNumber, inputTotalBill))
 
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
@@ -205,30 +205,30 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * HINT: The way we prompt for a value could be improved
  */
 
-let input = confirm("Do you want to enter any number?");
-if (input === true){
-    let userAnswer = prompt("What is the number?");
-    let parseIntAnswer = parseInt(userAnswer);
-    if (isNaN(parseIntAnswer)){
-        alert("You didn't type in a number.");
-    }else {
-        alert("You did put a number");
-        if (parseIntAnswer % 2 === 0){
-            alert("This is even.");
-        }else {
-            alert("This is odd.");
-        }
-
-        alert(parseIntAnswer + 100);
-
-        if (parseIntAnswer < 0 ){
-            alert("This is negative");
-        }else{
-            alert("This is positive");
-        }
-    }
-}
-
+// let input = confirm("Do you want to enter any number?");
+// if (input === true){
+//     let userAnswer = prompt("What is the number?");
+//     let parseIntAnswer = parseInt(userAnswer);
+//     if (isNaN(parseIntAnswer)){
+//         alert("You didn't type in a number.");
+//     }else {
+//         alert("You did put a number");
+//         if (parseIntAnswer % 2 === 0){
+//             alert("This is even.");
+//         }else {
+//             alert("This is odd.");
+//         }
+//
+//         alert(parseIntAnswer + 100);
+//
+//         if (parseIntAnswer < 0 ){
+//             alert("This is negative");
+//         }else{
+//             alert("This is positive");
+//         }
+//     }
+// }
+//
 
 
 

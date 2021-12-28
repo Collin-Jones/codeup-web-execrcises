@@ -314,3 +314,25 @@ function divide(o, p) {
 
 console.log(divide())
 
+
+let input = prompt("What car model do you have?");
+let inputv2 = prompt("2D or 4D")
+
+function typeOfCar(car) {
+    switch (car) {
+        case "Car":
+            return "GLI";
+            break;
+        case "2D":
+            return "2D";
+            break;
+        case "4D":
+            return "4D"
+            break;
+        default:
+            return "Sorry don't know what type of car that is."
+    }
+}
+
+console.log(input)
+console.log(inputv2)
