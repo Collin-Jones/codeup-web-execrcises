@@ -203,24 +203,24 @@
 // alert(seaCreatures(input))
 
 
-let num = 1;
-let counter = 0;
-while (counter <= 50) {
-    if (isPrime(num)) {
-        console.log(num)
-        num++;
-        counter++;
-    }else{
-        num++;
-    }
-}
-
-
-function isPrime(num) {
-    for (var i = 2; i < num; i++)
-        if (num % i === 0) return false;
-    return num > 1;
-}
+// let num = 1;
+// let counter = 0;
+// while (counter <= 50) {
+//     if (isPrime(num)) {
+//         console.log(num)
+//         num++;
+//         counter++;
+//     }else{
+//         num++;
+//     }
+// }
+//
+//
+// function isPrime(num) {
+//     for (var i = 2; i < num; i++)
+//         if (num % i === 0) return false;
+//     return num > 1;
+//}
 
 
 // function returnTwo(x) {
@@ -261,5 +261,56 @@ function isPrime(num) {
 //
 // console.log(identity())
 
+function cube(n) {
+    if (n = 3) ;
+    return n * n * n;
+}
 
+console.log(cube())
+
+let random = Math.floor((Math.random() * 3) + 1);
+
+function getRandomNumber(min, max) {
+    if (min * max) ;
+}
+
+console.log(random)
+console.log(getRandomNumber())
+
+
+function first(input) {
+    if (input = "Tarkov") ;
+    return input
+}
+
+console.log(first())
+
+
+function add(a, b) {
+    if (a = 4 , b = 5) ;
+    return a + b;
+}
+
+console.log(add())
+
+function subtract(q, e) {
+    if (q = 100, e = 50) ;
+    return q - e;
+}
+
+console.log(subtract())
+
+function multiply(t, u) {
+    if (t = 15, u = 25) ;
+    return t * u;
+}
+
+console.log(multiply())
+
+function divide(o, p) {
+    if (o = 60, p = 30) ;
+    return o / p;
+}
+
+console.log(divide())
 
