@@ -365,16 +365,26 @@ function triple(b) {
 
 console.log(triple())
 
-function double(o){
-    if (o = 60);
+function double(o) {
+    if (o = 60) ;
     return (o * 2);
 }
 
 console.log(double())
 
-function timesOne(p){
-    if (p = 30);
+function timesOne(p) {
+    if (p = 30) ;
     return (p * 1);
 }
 
 console.log(timesOne())
+
+function timesThenDivide(a) {
+    if (a = 100) {
+        return (a * 34);
+    } else {
+        return(a / 12) ;
+}
+}
+
+console.log(timesThenDivide())
