@@ -337,30 +337,44 @@
 // console.log(input)
 // console.log(inputv2)
 
-function sqaureRoot(n){
-    if (n = 10);
+function sqaureRoot(n) {
+    if (n = 10) ;
     return Math.sqrt(n);
 }
 
 console.log(sqaureRoot())
 
-function cubeRoot(q){
-    if (q = 2);
+function cubeRoot(q) {
+    if (q = 2) ;
     return Math.cbrt(q)
 }
 
 console.log(cubeRoot())
 
-function half(r){
-    if (r = 10);
+function half(r) {
+    if (r = 10) ;
     return (r / 2)
 }
 
 console.log(half())
 
-function triple(b){
-    if (b = 50);
+function triple(b) {
+    if (b = 50) ;
     return (b * 3)
 }
 
 console.log(triple())
+
+function double(o){
+    if (o = 60);
+    return (o * 2);
+}
+
+console.log(double())
+
+function timesOne(p){
+    if (p = 30);
+    return (p * 1);
+}
+
+console.log(timesOne())
