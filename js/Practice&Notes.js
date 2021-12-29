@@ -337,54 +337,66 @@
 // console.log(input)
 // console.log(inputv2)
 
-function sqaureRoot(n) {
-    if (n = 10) ;
-    return Math.sqrt(n);
+// function sqaureRoot(n) {
+//     if (n = 10) ;
+//     return Math.sqrt(n);
+// }
+//
+// console.log(sqaureRoot())
+//
+// function cubeRoot(q) {
+//     if (q = 2) ;
+//     return Math.cbrt(q)
+// }
+//
+// console.log(cubeRoot())
+//
+// function half(r) {
+//     if (r = 10) ;
+//     return (r / 2)
+// }
+//
+// console.log(half())
+//
+// function triple(b) {
+//     if (b = 50) ;
+//     return (b * 3)
+// }
+//
+// console.log(triple())
+//
+// function double(o) {
+//     if (o = 60) ;
+//     return (o * 2);
+// }
+//
+// console.log(double())
+//
+// function timesOne(p) {
+//     if (p = 30) ;
+//     return (p * 1);
+// }
+//
+// console.log(timesOne())
+//
+// function timesThenDivide(a) {
+//     if (a = 100) {
+//         return (a * 34);
+//     } else {
+//         return(a / 12) ;
+// }
+// }
+//
+// console.log(timesThenDivide())
+
+function priceOfFood(input){
+    if (input){
+    return "Your total is " + input
+}else {
+    return "That is not the total"
+    }
 }
 
-console.log(sqaureRoot())
+console.log(priceOfFood(input))
 
-function cubeRoot(q) {
-    if (q = 2) ;
-    return Math.cbrt(q)
-}
 
-console.log(cubeRoot())
-
-function half(r) {
-    if (r = 10) ;
-    return (r / 2)
-}
-
-console.log(half())
-
-function triple(b) {
-    if (b = 50) ;
-    return (b * 3)
-}
-
-console.log(triple())
-
-function double(o) {
-    if (o = 60) ;
-    return (o * 2);
-}
-
-console.log(double())
-
-function timesOne(p) {
-    if (p = 30) ;
-    return (p * 1);
-}
-
-console.log(timesOne())
-
-function timesThenDivide(a) {
-    if (a = 100) {
-        return (a * 34);
-    } else {
-        return(a / 12) ;
-}
-}
-
-console.log(timesThenDivide())
