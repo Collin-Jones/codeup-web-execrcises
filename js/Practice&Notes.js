@@ -389,14 +389,33 @@
 //
 // console.log(timesThenDivide())
 
-function priceOfFood(input){
-    if (input){
-    return "Your total is " + input
-}else {
-    return "That is not the total"
+// function priceOfFood(input){
+//     if (input){
+//     return "Your total is " + input
+// }else {
+//     return "That is not the total"
+//     }
+// }
+//
+// console.log(priceOfFood(input))
+
+let input = prompt("Enter any sea animal.")
+
+function seaCreatures(animals) {
+    switch (animals) {
+        case "Dolphin":
+            return "Maui's dolphin is the most endangered dolphin. There are less than 50 individuals remaining. Fewer than 10 vaquitas (a species of porpoise) survive."
+            break;
+        case "Reef Trigger fish":
+            return "Which is also know as the Humuhumunukunukuapuaa"
+            break;
+        case "Vampire Squid" :
+            return "At the tip of each of the vampire squid’s arms, a light-producing organ produces bright blue bioluminescence. "
+            break;
+        default:
+            return "I don't know anything about that animal."
     }
 }
 
-console.log(priceOfFood(input))
-
+console.log(seaCreatures())
 
