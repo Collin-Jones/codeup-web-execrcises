@@ -56,20 +56,20 @@
 //   a. Using prompt(), alert(), variables, and a while-loop, ask the user to input their password until their entry matches your hard-coded password value.
 //     HINT: start by defining the correct password and don't forget to link your html file
 
-function getPassword() {
-    let input = prompt("Please enter your password.")
-    let password = "Tarkov"
-    while (input = password) {
-        alert("Thats right!");
-        break;
-        while (input !== password) {
-    alert("That's not right!")
-            break;
-        }
-    }
-}
-
-getPassword()
+// function getPassword() {
+//     let input = prompt("Please enter your password.")
+//     let password = "Tarkov"
+//     while (input = password) {
+//         alert("Thats right!");
+//         break;
+//         while (input !== password) {
+//     alert("That's not right!")
+//             break;
+//         }
+//     }
+// }
+//
+// getPassword()
 
 
 //Ry's walk through, copied for reference.
@@ -81,7 +81,6 @@ getPassword()
 //     }
 // }
 // getPasswordInput()
-
 
 
 //     1. Write a function named getMeaningOfLife which accepts one parameter, meaningfulNum.
@@ -96,9 +95,16 @@ getPassword()
 //     4. Let’s continue with getMeaningOfLife: If the value of meaningfulNum happens to be 42, console log a separate message at the end of the function to say: "Did you bring your towel?"
 
 
-function getMeaningOfLife(meaningfulNum){
-    let counter = 42;
-    while (meaningfulNum !== 42){
-
+function getMeaningOfLife(meaningfulNum) {
+    let counter = 0;
+    while (counter !== meaningfulNum) {
+        counter++
+    }
+    console.log("The meaning of life, the universe, and everything is " + meaningfulNum);
+    if (counter === 42) {
+        console.log("Did you bring a towel?")
     }
 }
+
+
+getMeaningOfLife(42);
