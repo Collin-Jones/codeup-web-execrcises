@@ -56,21 +56,32 @@
 //   a. Using prompt(), alert(), variables, and a while-loop, ask the user to input their password until their entry matches your hard-coded password value.
 //     HINT: start by defining the correct password and don't forget to link your html file
 
-// function getPassword() {
+
+// function getPassword(){
+//     let userInput = prompt("What is your dang password?")
+//     let password = "Tarkov"
+//     let attempts = 1
+//     while (userInput !== password && attempts < 3){
+//         userInput = prompt("What is your dang password?");
+//         attempts++;
+//     }
+// }
+// getPassword()
+
+
+// function getPassword(){
 //     let input = prompt("Please enter your password.")
 //     let password = "Tarkov"
-//     while (input = password) {
-//         alert("Thats right!");
+//     while (input === password) {
+//         alert("That's right!");
 //         break;
-//         while (input !== password) {
-//     alert("That's not right!")
-//             break;
+//         if (input !== password) {
+//     alert("That's not right!");
 //         }
 //     }
 // }
 //
-// getPassword()
-
+// getPassword();
 
 //Ry's walk through, copied for reference.
 // function getPasswordInput(){
