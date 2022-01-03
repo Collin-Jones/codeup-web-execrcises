@@ -39,15 +39,30 @@
 // 6. What if getFizzBuzz doesn't return a value (VOID)?
 // a. How do you want to handle that?
 
-function getFizzBuzz(startingNum) {
-    if (startingNum % 3 === 0) {
-        console.log("Fizz");
-    } else if (startingNum % 5 === 0) {
-        console.log("Buzz");
-    }
-    if (startingNum % 3 === 0 && startingNum % 5 === 0) {
-        return "FIZZ BUZZ"
-    }
+// function getFizzBuzz(startingNum) {
+//     if (startingNum % 3 === 0) {
+//         console.log("Fizz");
+//     } else if (startingNum % 5 === 0) {
+//         console.log("Buzz");
+//     }
+//     if (startingNum % 3 === 0 && startingNum % 5 === 0) {
+//         return "FIZZ BUZZ"
+//     }
+// }
+//
+// console.log(getFizzBuzz(15));
+
+// 1. Define a function named getPassword() which performs the following actions:
+//   a. Using prompt(), alert(), variables, and a while-loop, ask the user to input their password until their entry matches your hard-coded password value.
+//     HINT: start by defining the correct password and don't forget to link your html file
+let input = prompt("Please enter your password.")
+function getPassword(aPassword){
+if (aPassword = 1234){
+  return alert("Correct password")
+}else if (!aPassword){
+    return alert("Wrong password")
 }
 
-console.log(getFizzBuzz(15));
+}
+
+console.log(getPassword(input))
