@@ -12,13 +12,13 @@ function add(num1, num2) {
 console.log(add(5, 5));
 
 function square(numToSqr){
-    return numToSqr * 10;
+    return numToSqr * numToSqr;
 }
 
 console.log(square(10))
 
 function sumOfSquares(a, b){
-    return a + b;
+    return (a * a) + (b * b);
 }
 
 console.log(sumOfSquares(10, 10))
