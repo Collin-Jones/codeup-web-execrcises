@@ -55,14 +55,50 @@
 // 1. Define a function named getPassword() which performs the following actions:
 //   a. Using prompt(), alert(), variables, and a while-loop, ask the user to input their password until their entry matches your hard-coded password value.
 //     HINT: start by defining the correct password and don't forget to link your html file
-let input = prompt("Please enter your password.")
-function getPassword(aPassword){
-if (aPassword = 1234){
-  return alert("Correct password")
-}else if (!aPassword){
-    return alert("Wrong password")
+
+function getPassword() {
+    let input = prompt("Please enter your password.")
+    let password = "Tarkov"
+    while (input = password) {
+        alert("Thats right!");
+        break;
+        while (input !== password) {
+    alert("That's not right!")
+            break;
+        }
+    }
 }
 
-}
+getPassword()
 
-console.log(getPassword(input))
+
+//Ry's walk through, copied for reference.
+// function getPasswordInput(){
+//     let correctPassword = "password"
+//     let userInput = prompt("Enter the dang password.")
+//     while (userInput !== correctPassword){
+//         alert("Thats not right!")
+//     }
+// }
+// getPasswordInput()
+
+
+
+//     1. Write a function named getMeaningOfLife which accepts one parameter, meaningfulNum.
+//     a. This function will use a while loop to compare its current number (a variable named counter) against the meaningfulNum.
+
+//     2. While the counter is not equivalent to the meaningfulNum, continue the loop.
+//     a.Once that condition is broken, console log a string telling the user "The meaning of life, the universe, and everything is [your meaningful number]"
+
+//     3. Thinking about the above function, getMeaningOfLife, let’s ask a question: What happens if the value of meaningfulNum is a non-numeric?
+//     a. Write some code to account for this case. How the function handles the situation is up to you!
+
+//     4. Let’s continue with getMeaningOfLife: If the value of meaningfulNum happens to be 42, console log a separate message at the end of the function to say: "Did you bring your towel?"
+
+
+function getMeaningOfLife(meaningfulNum){
+    let counter = 42;
+    while (meaningfulNum !== 42){
+
+    }
+}
