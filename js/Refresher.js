@@ -42,12 +42,12 @@
 function getFizzBuzz(startingNum) {
     if (startingNum % 3 === 0) {
         console.log("Fizz");
-    }else if (startingNum % 5 === 0){
+    } else if (startingNum % 5 === 0) {
         console.log("Buzz");
     }
-    if (startingNum % 3 === 0 && startingNum % 5 === 0){
+    if (startingNum % 3 === 0 && startingNum % 5 === 0) {
         return "FIZZ BUZZ"
     }
 }
 
-console.log(getFizzBuzz(15))
+console.log(getFizzBuzz(15));
