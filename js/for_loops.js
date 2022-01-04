@@ -5,12 +5,12 @@
 //'for loop' exercises
 
 
-// function showMultiplictionsTable(number){
-//     for (let a = 1; a <= 10; a++){
-//         console.log(number + " x " + a + " = " + (number * a));
-//     }
-// }
-// showMultiplictionsTable(7)
+function showMultiplictionsTable(number){
+    for (let a = 1; a <= 10; a++){
+        console.log(number + " x " + a + " = " + (number * a));
+    }
+}
+showMultiplictionsTable(7)
 
 // function randomNumber() {
 //     for (let a = 1; a <= 10; a++) {
@@ -51,30 +51,37 @@
 // }
 
 //Tried to do a switch case, it's not working though.
-// for (i = 1; i < 10; i++) {
-//     function numbers() {
-//         switch (theNumbers) {
+// function numbers() {
+//     for (let i = 1; i < 10; i++) {
+//         switch (i) {
 //             case i === 1:
 //                 return 1;
-//                 break;
+//
 //             case i === 2:
-//                 return 22
-//                 break;
+//                 return 22;
+//
 //             case i === 3:
-//                 return 333
-//                 break;
+//                 return 333;
+//
 //             case i === 4:
-//                 return 4444
-//                 break;
+//                 return 4444;
+//
 //             case i === 5:
-//                 return 55555
+//                 return 55555;
+//
 //             case i === 6:
-//                 return 666666
+//                 return 666666;
+//
+//             case i === 7:
+//                 return 7777777;
+//             default:
+//                 break;
 //         }
 //     }
+//
 // }
-// numbers()
-
+//
+// console.log(numbers())
 
 
 // for (i = 100; i >= 5; i -= 5){

@@ -160,7 +160,6 @@
 //
 
 
-
 // TODO: MINI EXERCISE
 //      Make a new version of your getPassword function using a for-loop!
 //      -> The purpose of the for-loop is to only allow a maximum number of attempts
@@ -168,16 +167,58 @@
 //      -> Once the user enters the correct password, use the 'break' keyword to end the loop
 //      -> After the loop concludes, alert the use they have entered the correct password
 let password = "Tarkov"
-
-function getPassword(){
+function getPassword() {
     let attempt = ""
     for (let i = 0; i < 3; i++) { // i < 3 tells me I have three tries.
-attempt = prompt("Enter Password.")
-        if (attempt === password){
-            alert("You are in!")
+        attempt = prompt("Enter Password.")
+        if (attempt === password) {
+            break;
+
+        }
+        if (i === 2) {
+            alert("Locked out")
+            return;
         }
     }
-    alert("You are locked out")
-
+    alert("You are in!")
 }
+
 getPassword()
+
+
+//continue
+//break - finishes the loop.
+// console.log("start of the loop")
+// for (let i = 0; i < 3; i++) {
+//     console.log("start of loop body");
+//
+//     if (i % 2 ===0){
+//         continue;
+//     }
+//     if (i === 1){
+//         break;
+//     }
+//     console.log("i = " + i)
+//     console.log("end of loop body")
+// }
+// console.log("end of the loop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
