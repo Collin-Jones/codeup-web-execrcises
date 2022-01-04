@@ -120,4 +120,3 @@ function getMeaningOfLife(meaningfulNum) {
 
 getMeaningOfLife(42);
 
-
