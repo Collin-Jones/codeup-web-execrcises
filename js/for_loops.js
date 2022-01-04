@@ -43,6 +43,32 @@
 //     }
 // }
 
+// for (i = 1; i < 10; i++) {
+//     function numbers() {
+//         switch (theNumbers) {
+//             case i === 1:
+//                 return 1;
+//                 break;
+//             case i === 2:
+//                 return 22
+//                 break;
+//             case i === 3:
+//                 return 333
+//                 break;
+//             case i === 4:
+//                 return 4444
+//                 break;
+//             case i === 5:
+//                 return 55555
+//             case i === 6:
+//                 return 666666
+//         }
+//     }
+// }
+// numbers()
+
+
+
 // for (i = 100; i >= 5; i -= 5){
 //     console.log(i)
 // }
