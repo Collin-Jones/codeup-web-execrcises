@@ -121,4 +121,63 @@
 // getMeaningOfLife(42);
 
 
+//TODO: MINI EXERCISE
+//      Write a function which uses a for-loop and
+//      -> accepts the number of times to iterate as a parameter
+//      -> only logs *if the iteration number is odd*
 
+// function randomOddNumber(numberIteration) {
+//     for (let i = 0; i < numberIteration; i++) {
+//         let number = Math.floor(Math.random(10) * 200)
+//         if (number % 2 !== 1) {
+//             console.log(number + " is an odd number")
+//         }
+//     }
+// }
+//
+// randomOddNumber(5)
+
+
+// TODO: MINI EXERCISE
+//      Write a function which uses a for-loop and
+//      -> accepts the number of times to iterate as a parameter
+//      -> logs "This is an even iteration" on the evens
+//      -> logs "This is an odd iteration" on the odds
+
+// function randomNumber(numIteration) {
+//     for (let a = 1; a <= numIteration; a++) {
+//         let numberV2 = Math.floor(Math.random(1) * 200)
+//         if (numberV2 % 2 === 0) { // if control var is even.
+//             console.log(numberV2 + " is an even number.")
+//         } else if (numberV2 % 2 !== 0) { // if control var is odd.
+//             console.log(numberV2 + " is an odd number.")
+//         }
+//     }
+//
+// }
+//
+// randomNumber(10)
+//
+
+
+
+// TODO: MINI EXERCISE
+//      Make a new version of your getPassword function using a for-loop!
+//      -> The purpose of the for-loop is to only allow a maximum number of attempts
+//          -> If the max attempt used unsuccessfully, alert the user of such and RETURN or BREAK
+//      -> Once the user enters the correct password, use the 'break' keyword to end the loop
+//      -> After the loop concludes, alert the use they have entered the correct password
+let password = "Tarkov"
+
+function getPassword(){
+    let attempt = ""
+    for (let i = 0; i < 3; i++) { // i < 3 tells me I have three tries.
+attempt = prompt("Enter Password.")
+        if (attempt === password){
+            alert("You are in!")
+        }
+    }
+    alert("You are locked out")
+
+}
+getPassword()
