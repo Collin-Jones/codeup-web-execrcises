@@ -4,14 +4,15 @@
 
 //'for loop' exercises
 
+// Question 2
+// function showMultiplictionsTable(number){
+//     for (let a = 1; a <= 10; a++){
+//         console.log(number + " x " + a + " = " + (number * a));
+//     }
+// }
+// showMultiplictionsTable(10)
 
-function showMultiplictionsTable(number){
-    for (let a = 1; a <= 10; a++){
-        console.log(number + " x " + a + " = " + (number * a));
-    }
-}
-showMultiplictionsTable(7)
-
+// Question 3
 // function randomNumber() {
 //     for (let a = 1; a <= 10; a++) {
 //         let numberV2 = Math.floor(Math.random(20) * 200)
@@ -26,7 +27,7 @@ showMultiplictionsTable(7)
 //
 // randomNumber()
 
-
+// Question 4
 // Wesley helped me a lot with this one. I will come back to this and try it as a switch statement
 // for (i = 1; i < 10; i++){
 //     if (i === 1){
@@ -49,7 +50,7 @@ showMultiplictionsTable(7)
 //         console.log(999999999)
 //     }
 // }
-
+// Apart of Question 4
 //Tried to do a switch case, it's not working though.
 // function numbers() {
 //     for (let i = 1; i < 10; i++) {
@@ -83,7 +84,24 @@ showMultiplictionsTable(7)
 //
 // console.log(numbers())
 
+// Apart of Question 4, Ry did this one. Just putting it here for reference and typing practice.
+//
+// for (let i = 0; i <= 9; i++) {
+//     console.log(i.toString().repeat(i));
+// }
+//
+// // Nested Loop
+// for (let outer = 0; outer <= 9; outer++) {
+//     let output = "";
+//
+//     for (let inner = 0; inner <= outer ; inner++) {
+//         output += outer;
+//     }
+//     console.log(output)
+// }
 
+
+// Question 5
 // for (i = 100; i >= 5; i -= 5){
 //     console.log(i)
 // }
