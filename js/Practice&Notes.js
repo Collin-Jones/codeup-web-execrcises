@@ -425,3 +425,14 @@
 //     console.log('while loop iteration #' + i);
 //     i++;
 // }
+
+
+//for (Control var, conditions, expression)
+//^ this is for "for loops"
+
+// function petThoseDoggos(numberOfDoggos){
+//     for (let i = 0; i < numberOfDoggos; i++) {
+//         console.log("I pet " + i + " Doggos")
+//     }
+// }
+// petThoseDoggos(42)

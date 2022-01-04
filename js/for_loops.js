@@ -1,3 +1,10 @@
+//for (Control var, conditions, expression){
+//}
+//^ this is for "for loops"
+
+//'for loop' exercises
+
+
 // function showMultiplictionsTable(number){
 //     for (let a = 1; a <= 10; a++){
 //         console.log(number + " x " + a + " = " + (number * a));
@@ -43,6 +50,7 @@
 //     }
 // }
 
+//Tried to do a switch case, it's not working though.
 // for (i = 1; i < 10; i++) {
 //     function numbers() {
 //         switch (theNumbers) {
