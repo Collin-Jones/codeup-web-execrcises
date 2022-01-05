@@ -246,52 +246,93 @@
 // }
 
 
-let instructors = ["Casey", "Ry", "DocRob", "Justin", "Kenneth"]
-
-console.log("Original: ", instructors);
-// push && unshift return the new length of the array
-let newLength = instructors.push("Samuel")
-console.log(newLength);
-
-
-// push adds an element to the end of the array
-instructors.push("Laura");
-console.log("After pushes: ", instructors);
-
-
-// unshift adds an element to the beginning of the array
-instructors.unshift("David");
-
-console.log("After unshift: ", instructors);
-
-
-//Removing elements to an array
-// pop removes the last element from the array
-let removedItem = instructors.pop();
-
-console.log(removedItem);
-
-console.log("After pop: ", instructors);
-
-
-// shift removes first element from array
-let removedFromBeginning = instructors.shift();
-
-console.log(removedFromBeginning);
-
-console.log("After Shift: ", instructors);
-
-// Locating Array Elements
-
-let ryIndex = instructors.indexOf('ry');
-
-console.log('Ry Index: ', ryIndex);
-
-let lastRy = instructors.lastIndexOf('Ry');
-
-console.log(instructors);
-
-console.log(lastRy)
+// let instructors = ["Casey", "Ry", "DocRob", "Justin", "Kenneth"]
+//
+// console.log("Original: ", instructors);
+// // push && unshift return the new length of the array
+// let newLength = instructors.push("Samuel")
+// console.log(newLength);
+//
+//
+// // push adds an element to the end of the array
+// instructors.push("Laura");
+// console.log("After pushes: ", instructors);
+//
+//
+// // unshift adds an element to the beginning of the array
+// instructors.unshift("David");
+//
+// console.log("After unshift: ", instructors);
+//
+//
+// //Removing elements to an array
+// // pop removes the last element from the array
+// let removedItem = instructors.pop();
+//
+// console.log(removedItem);
+//
+// console.log("After pop: ", instructors);
+//
+//
+// // shift removes first element from array
+// let removedFromBeginning = instructors.shift();
+//
+// console.log(removedFromBeginning);
+//
+// console.log("After Shift: ", instructors);
+//
+// // Locating Array Elements
+//
+// let ryIndex = instructors.indexOf('ry');
+//
+// console.log('Ry Index: ', ryIndex);
+//
+// let lastRy = instructors.lastIndexOf('Ry');
+//
+// console.log(instructors);
+//
+// console.log(lastRy)
 
 // Slice
 
+// console.log(instructors);
+//
+// let slice = instructors.slice(2, 4);
+//
+// console.log('Sliced: ', slice);
+//
+// console.log(instructors);
+
+
+// Reverse && Sort
+//
+// console.log(instructors);
+//
+// instructors.sort();
+//
+// console.log(instructors);
+
+
+// let numbers = [100, 200 , 300, 400, 50 , 25 ,15];
+// numbers.sort();
+// console.log(numbers);
+//
+// // Splitting && Joining
+//
+// let userInfo =  "Collin, Jones , 1234 blah blah address Rd , DOB"
+//
+// let userArray = userInfo.split(',')
+//
+// console.log(userArray);
+//
+// let firstName = userArray[0];
+//
+// let address = userArray[2];
+//
+// console.log(firstName)
+//
+// console.log(address)
+//
+// let joinedUserArray = userArray.join(',')
+//
+// console.log(joinedUserArray)
