@@ -235,13 +235,63 @@
 // -> logs the first, third, and last elements of that array
 // -Invoke your function and pass favoriteArtists as an argument
 
-let favoriteVideoGames = ['Skyrim', 'Fallout', 'Escape from Tarkov', 'Rocket League', 'Rainbow Six Siege']
-function array(x){
-    console.log(x[0] + "\n" + x[2] + "\n" + x[x.length -1])
-}
-array(favoriteVideoGames)
+// let favoriteVideoGames = ['Skyrim', 'Fallout', 'Escape from Tarkov', 'Rocket League', 'Rainbow Six Siege']
+// function array(x){
+//     console.log(x[0] + "\n" + x[2] + "\n" + x[x.length -1])
+// }
+// array(favoriteVideoGames)
+//
+// for (let i = 0; i < favoriteVideoGames.length ; i++) {
+//     console.log(favoriteVideoGames[i])
+// }
 
 
+let instructors = ["Casey", "Ry", "DocRob", "Justin", "Kenneth"]
+
+console.log("Original: ", instructors);
+// push && unshift return the new length of the array
+let newLength = instructors.push("Samuel")
+console.log(newLength);
 
 
+// push adds an element to the end of the array
+instructors.push("Laura");
+console.log("After pushes: ", instructors);
+
+
+// unshift adds an element to the beginning of the array
+instructors.unshift("David");
+
+console.log("After unshift: ", instructors);
+
+
+//Removing elements to an array
+// pop removes the last element from the array
+let removedItem = instructors.pop();
+
+console.log(removedItem);
+
+console.log("After pop: ", instructors);
+
+
+// shift removes first element from array
+let removedFromBeginning = instructors.shift();
+
+console.log(removedFromBeginning);
+
+console.log("After Shift: ", instructors);
+
+// Locating Array Elements
+
+let ryIndex = instructors.indexOf('ry');
+
+console.log('Ry Index: ', ryIndex);
+
+let lastRy = instructors.lastIndexOf('Ry');
+
+console.log(instructors);
+
+console.log(lastRy)
+
+// Slice
 
