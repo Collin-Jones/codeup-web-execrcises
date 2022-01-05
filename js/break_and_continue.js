@@ -1,5 +1,5 @@
 function oddNumber(numberV2) {
-    for (let i = 1; i <= 49; i++) {
+    for (let i = 1; i <= 50; i++) {
         if (numberV2 === i){
             console.log("Yikes, skip this number: " + numberV2)
             continue;
@@ -10,5 +10,6 @@ function oddNumber(numberV2) {
 
     }
 }
+
 oddNumber(27)
-// Was going in the right direction William helped me just a bit
+// Was going in the right direction, William helped me just a bit

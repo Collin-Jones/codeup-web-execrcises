@@ -166,24 +166,24 @@
 //          -> If the max attempt used unsuccessfully, alert the user of such and RETURN or BREAK
 //      -> Once the user enters the correct password, use the 'break' keyword to end the loop
 //      -> After the loop concludes, alert the use they have entered the correct password
-let password = "Tarkov"
-function getPassword() {
-    let attempt = ""
-    for (let i = 0; i < 3; i++) { // i < 3 tells me I have three tries.
-        attempt = prompt("Enter Password.")
-        if (attempt === password) {
-            break;
-
-        }
-        if (i === 2) {
-            alert("Locked out")
-            return;
-        }
-    }
-    alert("You are in!")
-}
-
-getPassword()
+// let password = "Tarkov"
+// function getPassword() {
+//     let attempt = ""
+//     for (let i = 0; i < 3; i++) { // i < 3 tells me I have three tries.
+//         attempt = prompt("Enter Password.")
+//         if (attempt === password) {
+//             break;
+//
+//         }
+//         if (i === 2) {
+//             alert("Locked out")
+//             return;
+//         }
+//     }
+//     alert("You are in!")
+// }
+//
+// getPassword()
 
 
 //continue
@@ -205,18 +205,41 @@ getPassword()
 
 
 
+// Array's
 
+// []
+// [1]
+// ['someString'1, 2, 3, 4, true, false]
 
+//example of array
+// let animals = ['Whale', 'Dog', 'Cats'];
+//
+// let numbers = [1, 2, 4, 5];
+//
+// console.log(animals.length)
+// console.log(numbers.length)
+// console.log(animals[1])
+// console.log(numbers[3])
+//
+// //First element
+// // console.log(animals[0])
+//
+// //Second element
+// // console.log(animals[1])
+//
+// console.log(animals[animals.length - 1])
 
+// Mini Exercise // I did video games because I don't really have favorite artists.
+// -Create an array with five strings representing your favorite artists (music or otherwise) and store it in a variable called favoriteArtists
+// -Write a function that accepts an array as a parameter and...
+// -> logs the first, third, and last elements of that array
+// -Invoke your function and pass favoriteArtists as an argument
 
-
-
-
-
-
-
-
-
+let favoriteVideoGames = ['Skyrim', 'Fallout', 'Escape from Tarkov', 'Rocket League', 'Rainbow Six Siege']
+function array(x){
+    console.log(x[0] + "\n" + x[2] + "\n" + x[x.length -1])
+}
+array(favoriteVideoGames)
 
 
 
