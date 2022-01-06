@@ -387,22 +387,21 @@ function printMovies(movies) {
 }
 
 function printMovie(movie){
-    console.log("The movie title " + movie.title + ".");
+    console.log("\nThe movie title " + movie.title + ".");
     console.log("The movie was released in " + movie.yearReleased + ".");
     console.log("The imbd rating was " + movie.rating + ".")
     console.log("The director was " + movie.director + ".")
-    console.log("The movie title " + movie.title[1] + ".")
 }
 
 
 let movies = [];
 movies[0] = {};
+movies[1] = {};
 movies[0].title = "Interstellar";
 movies[0].yearReleased = 2014;
 movies[0].rating = "8.6 out of 10";
 movies[0].director = "Christopher Nolan";
-
-movies[1].title = "Star Wars Episode VI Return of the Jedi";
+movies[1].title = "Star Wars Return of the Jedi";
 movies[1].yearReleased = 1983;
 movies[1].rating = "8.3 out of 10 on imdb";
 movies[1].director = "Richard Marquand";
@@ -419,3 +418,8 @@ printMovies(movies);
 
 
 
+// *** last part of MINI EXERCISE ***
+// Add a rate(rating) function to each of your movie objects.
+//     The function takes an int parameter called rating
+// Modify rate(rating) to set a myRating property on that object
+// modify printMovie to display myRating for each movie
