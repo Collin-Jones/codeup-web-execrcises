@@ -204,7 +204,6 @@
 // console.log("end of the loop")
 
 
-
 // Array's
 
 // []
@@ -246,93 +245,177 @@
 // }
 
 
-let instructors = ["Casey", "Ry", "DocRob", "Justin", "Kenneth"]
+// let instructors = ["Casey", "Ry", "DocRob", "Justin", "Kenneth"]
+//
+// console.log("Original: ", instructors);
+// // push && unshift return the new length of the array
+// let newLength = instructors.push("Samuel")
+// console.log(newLength);
+//
+//
+// // push adds an element to the end of the array
+// instructors.push("Laura");
+// console.log("After pushes: ", instructors);
+//
+//
+// // unshift adds an element to the beginning of the array
+// instructors.unshift("David");
+//
+// console.log("After unshift: ", instructors);
+//
+//
+// //Removing elements to an array
+// // pop removes the last element from the array
+// let removedItem = instructors.pop();
+//
+// console.log(removedItem);
+//
+// console.log("After pop: ", instructors);
+//
+//
+// // Shift removes first element from array
+// let removedFromBeginning = instructors.shift();
+//
+// console.log(removedFromBeginning);
+//
+// console.log("After Shift: ", instructors);
+//
+// // Locating Array Elements
+//
+// let ryIndex = instructors.indexOf('ry');
+//
+// console.log('Ry Index: ', ryIndex);
+//
+// let lastRy = instructors.lastIndexOf('Ry');
+//
+// console.log(instructors);
+//
+// console.log(lastRy)
+//
+// // Slice
+//
+// console.log(instructors);
+//
+// let slice = instructors.slice(2, 4);
+//
+// console.log('Sliced: ', slice);
+//
+// console.log(instructors);
+//
+//
+// // Reverse && Sort
+//
+// console.log(instructors);
+//
+// instructors.sort();
+//
+// console.log(instructors);
+//
+//
+// let numbers = [100, 200 , 300, 400, 50 , 25 ,15];
+// numbers.sort();
+// console.log(numbers);
+//
+// // Splitting && Joining
+//
+// let userInfo =  "Collin, Jones , 1234 blah blah address Rd , DOB"
+//
+// let userArray = userInfo.split(',')
+//
+// console.log(userArray);
+//
+// let firstName = userArray[0];
+//
+// let address = userArray[2];
+//
+// console.log(firstName)
+//
+// console.log(address)
+//
+// let joinedUserArray = userArray.join(',')
+//
+// console.log(joinedUserArray)
 
-console.log("Original: ", instructors);
-// push && unshift return the new length of the array
-let newLength = instructors.push("Samuel")
-console.log(newLength);
+
+// Objects Lecture
+"use strict";
+
+// let car1 = {};
+// car1.make = "Volkswagen";
+// car1.model = "GLI";
+// car1.year = 2019;
+//
+//
+// console.log(car1)
+//
+// let car2 = {
+//     make : "Jeep",
+//     model : "Liberty",
+//     year : 2004
+// }
+// console.log(car2)
+//
+// console.log("Make: " + car1.make);
+// console.log("Model: " + car1.model);
+// console.log("Year: " + car1.year);
+//
+//
+//
+// function printCar(car){
+//     console.log("Make: " + car.make);
+//     console.log("Model: " + car.model);
+//     if(car.year){
+//         console.log("Year: " + car.year)
+//     }
+// }
+
+// Mini exercise
+
+// Declare an array of two objects for movies
+// that have the following member values:
+//     title (string)
+//     year released (int)
+//     rating (string)
+//     director (string)
+//     imdb rating (decimal)
+//     academy award win (boolean)
+
+function printMovies(movies) {
+    for (let i = 0; i < movies.length; i++) {
+        printMovie(movies[i])
+    }
+}
+
+function printMovie(movie){
+    console.log("The movie title " + movie.title + ".");
+    console.log("The movie was released in " + movie.yearReleased + ".");
+    console.log("The imbd rating was " + movie.rating + ".")
+    console.log("The director was " + movie.director + ".")
+    console.log("The movie title " + movie.title[1] + ".")
+}
 
 
-// push adds an element to the end of the array
-instructors.push("Laura");
-console.log("After pushes: ", instructors);
+let movies = [];
+movies[0] = {};
+movies[0].title = "Interstellar";
+movies[0].yearReleased = 2014;
+movies[0].rating = "8.6 out of 10";
+movies[0].director = "Christopher Nolan";
+
+movies[1].title = "Star Wars Episode VI Return of the Jedi";
+movies[1].yearReleased = 1983;
+movies[1].rating = "8.3 out of 10 on imdb";
+movies[1].director = "Richard Marquand";
+
+printMovies(movies);
 
 
-// unshift adds an element to the beginning of the array
-instructors.unshift("David");
-
-console.log("After unshift: ", instructors);
-
-
-//Removing elements to an array
-// pop removes the last element from the array
-let removedItem = instructors.pop();
-
-console.log(removedItem);
-
-console.log("After pop: ", instructors);
+// Change the director member of your movies to an object
+// with firstName and lastName members
+// Make an array member for your movies called genres.
+//     It is an array of string elements where each element
+//   is one of your movies’ genres from imdb.com
+//  and change your printMovie function
 
 
-// Shift removes first element from array
-let removedFromBeginning = instructors.shift();
 
-console.log(removedFromBeginning);
-
-console.log("After Shift: ", instructors);
-
-// Locating Array Elements
-
-let ryIndex = instructors.indexOf('ry');
-
-console.log('Ry Index: ', ryIndex);
-
-let lastRy = instructors.lastIndexOf('Ry');
-
-console.log(instructors);
-
-console.log(lastRy)
-
-// Slice
-
-console.log(instructors);
-
-let slice = instructors.slice(2, 4);
-
-console.log('Sliced: ', slice);
-
-console.log(instructors);
-
-
-// Reverse && Sort
-
-console.log(instructors);
-
-instructors.sort();
-
-console.log(instructors);
-
-
-let numbers = [100, 200 , 300, 400, 50 , 25 ,15];
-numbers.sort();
-console.log(numbers);
-
-// Splitting && Joining
-
-let userInfo =  "Collin, Jones , 1234 blah blah address Rd , DOB"
-
-let userArray = userInfo.split(',')
-
-console.log(userArray);
-
-let firstName = userArray[0];
-
-let address = userArray[2];
-
-console.log(firstName)
-
-console.log(address)
-
-let joinedUserArray = userArray.join(',')
-
-console.log(joinedUserArray)
