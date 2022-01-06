@@ -25,6 +25,6 @@ let planetsArray = planetsString.split(',')
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
-let plantString = "Earth <br> Venus <br> Mars <br> Jupiter <br>"
-    console.log(plantString)
+let plantString = planetsArray.join('<br>')
+    console.log(plantString);
 })();
