@@ -1,3 +1,4 @@
+//Got some help with the exercises
 (function () {
     "use strict";
 
