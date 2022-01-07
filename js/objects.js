@@ -49,14 +49,15 @@
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
     ];
-    shoppers.forEach(function (shopper){
+    shoppers.forEach(function (shopper) {
         console.log(shopper.name)
         console.log(shopper.amount)
-        if (shopper.amount > 200){
+        if (shopper.amount > 200) {
             console.log("Discount is 12%")
             console.log(shopper.amount - shopper.amount * .12)
         }
     })
+
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
@@ -69,7 +70,53 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    function theBooks(books) {
+        for (let i = 0; i < books.length; i++) {
+            book(books[i])
+        }
+    }
 
+    function book(books) {
+        console.log("\nThe title of the book " + books.title + ".");
+        console.log("The first name of the author is " + books.author.firstName + ".")
+        console.log("The last name of the author is " + books.author.lastName + ".")
+    }
+
+    let books = [{
+        title: "Dune",
+        author: {
+            firstName: "Frank",
+            lastName: "Herbert"
+        }
+
+    }, {
+        title: "Lord of Rings",
+        author: {
+            firstName: "J. R. R.",
+            lastName: "Tolkien"
+        }
+    }, {
+        title: "A Game of Thrones",
+        author: {
+            firstName: "George R.R.",
+            lastName: "Martin"
+        }
+    }, {
+        title: "The Upstander",
+        author: {
+            firstName: "Jori",
+            lastName: "Epstein"
+        }
+    }, {
+        title: "The Alchemist",
+        author: {
+            firstName: "Paulo",
+            lastName: "Coelho"
+        }
+    }
+    ];
+
+    theBooks(books);
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -94,6 +141,11 @@
      *      ---
      *      ...
      */
+    books.forEach(function (book, index) {
+        console.log("\n#" + (index + 1))
+        console.log("Title: " + book.title)
+        console.log("Author: " + book.author.firstName, book.author.lastName)
+    });
 
     /**
      * Bonus:
