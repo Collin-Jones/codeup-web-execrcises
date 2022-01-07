@@ -409,17 +409,12 @@ movies[1].director = "Richard Marquand";
 printMovies(movies);
 
 
-// Change the director member of your movies to an object
-// with firstName and lastName members
-// Make an array member for your movies called genres.
-//     It is an array of string elements where each element
-//   is one of your movies’ genres from imdb.com
-//  and change your printMovie function
+// MATH
 
+//Return a random integer (x) between min and max inclusively
+//min <= x <= max
+function getRandomInt (min, max){
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
-
-// *** last part of MINI EXERCISE ***
-// Add a rate(rating) function to each of your movie objects.
-//     The function takes an int parameter called rating
-// Modify rate(rating) to set a myRating property on that object
-// modify printMovie to display myRating for each movie
+console.log(getRandomInt(50, 100))
