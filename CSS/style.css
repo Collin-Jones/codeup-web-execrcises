@@ -24,3 +24,14 @@ table, th, td {
 table{
     width: 50%;
 }
+
+ol{
+    list-style-type: circle;
+}
+ul{
+    list-style-type: circle;
+}
+
+table th{
+    text : bold;
+}
