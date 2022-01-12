@@ -1,5 +1,6 @@
 .fancy-header{
     color : cyan;
+    font-family: cursive;
 }
 
 
@@ -17,3 +18,9 @@ body{
     background-image: url("https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
+table, th, td {
+    border: 1px solid cyan;
+}
+table{
+    width: 50%;
+}
