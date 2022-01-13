@@ -6,22 +6,47 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 
 }
-div1{
-outline-style: solid;
+
+section {
+    outline-style: none;
     outline-width: 2px;
+    text-align: center;
 }
 
-div2{
+div1 {
     outline-style: solid;
     outline-width: 2px;
+    outline-offset: 5px;
+    text-align: center;
+    color: saddlebrown;
+    border-radius: 10px;
 }
 
-div3{
+div2 {
     outline-style: solid;
     outline-width: 2px;
+    outline-offset: 5px;
+    text-align: center;
+    color: mediumpurple;
+    border-radius: 10px;
 }
 
-div4{
+div3 {
     outline-style: solid;
     outline-width: 2px;
+    text-align: center;
+    outline-offset: 5px;
+    color: peru;
+    border-radius: 10px;
 }
+
+div4 {
+    outline-style: solid;
+    outline-width: 2px;
+    text-align: center;
+    outline-offset: 5px;
+    color: saddlebrown;
+    border-radius: 10px;
+}
+
+

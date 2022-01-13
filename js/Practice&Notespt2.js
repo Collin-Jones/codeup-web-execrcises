@@ -380,41 +380,60 @@
 //     imdb rating (decimal)
 //     academy award win (boolean)
 
-function printMovies(movies) {
-    for (let i = 0; i < movies.length; i++) {
-        printMovie(movies[i])
-    }
+// function printMovies(movies) {
+//     for (let i = 0; i < movies.length; i++) {
+//         printMovie(movies[i])
+//     }
+// }
+//
+// function printMovie(movie){
+//     console.log("\nThe movie title " + movie.title + ".");
+//     console.log("The movie was released in " + movie.yearReleased + ".");
+//     console.log("The imbd rating was " + movie.rating + ".")
+//     console.log("The director was " + movie.director + ".")
+// }
+
+
+// let movies = [];
+// movies[0] = {};
+// movies[1] = {};
+// movies[0].title = "Interstellar";
+// movies[0].yearReleased = 2014;
+// movies[0].rating = "8.6 out of 10";
+// movies[0].director = "Christopher Nolan";
+// movies[1].title = "Star Wars Return of the Jedi";
+// movies[1].yearReleased = 1983;
+// movies[1].rating = "8.3 out of 10 on imdb";
+// movies[1].director = "Richard Marquand";
+//
+// printMovies(movies);
+//
+//
+// // MATH
+//
+// //Return a random integer (x) between min and max inclusively
+// //min <= x <= max
+// function getRandomInt (min, max){
+//     return Math.floor(Math.random() * (max - min + 1) + min);
+// }
+//
+// console.log(getRandomInt(50, 100))
+
+// Create a function called arrayToString.
+//     The function takes a parameter called myArray.
+//     It returns a string that is the concatenation of all the elements in myArray.
+//     This function is essentially your own version of join.
+//     Therefore, you cannot use join in your function body :slightly_smiling_face:
+// New
+// 9:02
+// Hint: use a loop
+
+function arrayToString(myArray){
+    let canCatString;
+for (let i = 0; i < myArray.length; i++){
+    canCatString += myArray[i]
+}
+    return canCatString
 }
 
-function printMovie(movie){
-    console.log("\nThe movie title " + movie.title + ".");
-    console.log("The movie was released in " + movie.yearReleased + ".");
-    console.log("The imbd rating was " + movie.rating + ".")
-    console.log("The director was " + movie.director + ".")
-}
-
-
-let movies = [];
-movies[0] = {};
-movies[1] = {};
-movies[0].title = "Interstellar";
-movies[0].yearReleased = 2014;
-movies[0].rating = "8.6 out of 10";
-movies[0].director = "Christopher Nolan";
-movies[1].title = "Star Wars Return of the Jedi";
-movies[1].yearReleased = 1983;
-movies[1].rating = "8.3 out of 10 on imdb";
-movies[1].director = "Richard Marquand";
-
-printMovies(movies);
-
-
-// MATH
-
-//Return a random integer (x) between min and max inclusively
-//min <= x <= max
-function getRandomInt (min, max){
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-console.log(getRandomInt(50, 100))
+console.log(arrayToString(["Me", "I", "You", "They",]))
