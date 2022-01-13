@@ -1,0 +1,27 @@
+body, html {
+    height: 100%;
+    width: 50%;
+    padding: 1em;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+
+}
+div1{
+outline-style: solid;
+    outline-width: 2px;
+}
+
+div2{
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+div3{
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+div4{
+    outline-style: solid;
+    outline-width: 2px;
+}
