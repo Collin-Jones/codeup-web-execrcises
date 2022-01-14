@@ -1,3 +1,4 @@
+
 // Maths!
 //     Write a function called add(num1, num2) which returns the sum of num1 and num2
 // Write a function named square(numToSqr) which takes in a number (numToSqr) and returns the number multiplied by itself
@@ -428,12 +429,33 @@
 // 9:02
 // Hint: use a loop
 
-function arrayToString(myArray){
-    let canCatString = "";
-for (let i = 0; i < myArray.length; i++){
-    canCatString += myArray[i];
-}
-    return canCatString;
+// function arrayToString(myArray){
+//     let canCatString = "";
+// for (let i = 0; i < myArray.length; i++){
+//     canCatString += myArray[i];
+// }
+//     return canCatString;
+// }
+//
+// console.log(arrayToString(["Me ", "I ", "You ", "They ",]));
+
+
+// Define a function named removeAll(array, value) that takes in two arguments. The first argument should be an array and the second argument should be a value you wish to remove
+// Given the following array as an argument (do not define this array inside your function - pass it in as an argument)
+// var bugs = ["mosquito", "ant", "scorpion", "ant", "ant", "mosquito", "typo", "reference error", "type error"];
+// --removeAll(bugs, "ant") should return ["mosquito", "scorpion", "mosquito", "typo", "reference error", "type error"]
+// --removeAll(bugs, "mosquito") should return ["ant", "scorpion", "ant", "ant", "typo", "reference error", "type error"]
+// --removeAll(bugs, "roach") should return the original array b/c “roach” has no occurrances.
+
+function removeAll(array, value) {
+    let filteredArray = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] !== value) {
+            filteredArray.push(array[i]);
+        }
+    }
+    return filteredArray;
 }
 
-console.log(arrayToString(["Me ", "I ", "You ", "They ",]));
+let bugs = ["mosquito", "ant", "scorpion", "ant", "ant", "mosquito", "typo", "reference error", "type error"];
+console.log(removeAll(bugs, "ant"));
