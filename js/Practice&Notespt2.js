@@ -429,11 +429,11 @@
 // Hint: use a loop
 
 function arrayToString(myArray){
-    let canCatString;
+    let canCatString = "";
 for (let i = 0; i < myArray.length; i++){
-    canCatString += myArray[i]
+    canCatString += myArray[i];
 }
-    return canCatString
+    return canCatString;
 }
 
-console.log(arrayToString(["Me", "I", "You", "They",]))
+console.log(arrayToString(["Me ", "I ", "You ", "They ",]));
