@@ -32,7 +32,7 @@ a{
 .Middle-Logo{
     align-content: flex-start;
     margin: 0 auto;
-    font-family: Verdana;
+    font-family: Verdana, serif;
     font-size: 3em;
 
 }
