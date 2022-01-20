@@ -1,8 +1,6 @@
-
-
-
 .jumbotron{
     background-image: url("/image/pizza.png");
+    margin: 1em;
 }
 
 .jumbotron h1{
