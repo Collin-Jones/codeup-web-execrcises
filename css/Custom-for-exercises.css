@@ -11,3 +11,7 @@
 .build{
     margin-left: 1em;
 }
+
+.my-card-header{
+    background-color: #3B94D9 !important;
+}
