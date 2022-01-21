@@ -39,4 +39,5 @@ a{
 
 .image-links{
     display: flex;
+    align-content: space-between;
 }
