@@ -16,3 +16,11 @@
 .project{
 margin: 1em;
 }
+
+.main{
+    background-color: lightslategray;
+}
+
+.resume-list{
+    text-decoration-color: #3B94D9;
+}
