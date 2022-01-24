@@ -1,11 +1,53 @@
-body{
+body {
     background-color: #E6E6E6;
 }
 
-.xs-logo{
+p {
+    font-family: Abel, sans-serif;
+}
+
+ul {
+    font-family: Abel, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Anton, sans-serif;
+}
+
+.xs-top-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.xs-logo-bg {
     background-color: #F0F0F0;
     margin-top: 2em;
     margin-bottom: 2em;
+    height: 4em;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.xs-logo {
+    height: 105px;
+    width: 105px;
+}
+
+.xs-top-nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.xs-top-nav div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.xs-top-nav div:nth-of-type(4) h1{
+    text-align: center;
+    padding: .2em;
 }
