@@ -67,6 +67,12 @@ h1, h2, h3, h4, h5, h6 {
 .xs-top-nav div:nth-of-type(4) h1{
     text-align: center;
     padding: .2em;
+    margin-bottom: 1em;
+}
+
+.xs-top-nav div:nth-of-type(5) h3{
+    margin-bottom: 1em;
+    text-align: center;
 }
 
 .buttons {
@@ -94,18 +100,30 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-red {
     background-color: #E6563B;
+    font-size: .6em;
+    padding-top: .5em;
+    padding-right: .04em;
 }
 
 .btn-orange {
     background-color: #EB9D3A;
+    font-size: .6em;
+    padding-top: .5em;
+    padding-right: .04em;
 }
 
 .btn-green {
     background-color: #7CB06C;
+    font-size: .6em;
+    padding-top: .5em;
+    padding-right: .04em;
 }
 
 .btn-blue {
-    background-color: #00ABA9
+    background-color: #00ABA9;
+    font-size: .6em;
+    padding-top: .5em;
+    padding-right: .04em;
 }
 
 .work {
@@ -122,19 +140,104 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 .2em;
 }
 
+.bottom-container {
+    margin: 0;
+    padding: 0;
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 2em;
 }
 
 .projects p {
     margin-right: auto;
 }
 
-.apple-img {
+.proj-img {
     width: 98%;
-    border: 8px solid #f0f0f0;
+    height: 77%;
+    border: 4px solid grey;
     border-radius: 5px;
     margin-bottom: .5em;
+}
+
+.news {
+    padding-top: .5em;
+}
+
+.news-img {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:425px) {
+    .divider {
+        display: none;
+    }
+    .macbook {
+        display: none;
+    }
+    .man {
+        display: none;
+    }
+    .security {
+        display: none;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .xs-top-nav>div:nth-of-type(3) {
+        position: absolute;
+        top: 3.5em;
+        display: flex;
+    }
+    .xs-top-nav>div:nth-of-type(3) ul {
+        text-align: center;
+    }
+    .xs-top-nav>div:nth-of-type(3) li:nth-of-type(2) {
+        flex-grow: 1;
+        padding-right: 9em;
+    }
+    .xs-top-nav>div:nth-of-type(3) li:nth-of-type(3) {
+        flex-grow: 1;
+    }
+    .xs-top-nav div:nth-of-type(4) h1{
+        padding: 0;
+        margin-bottom: .6em;
+    }
+    .button {
+        margin-left: .1em;
+        margin-right: .1em;
+    }
+    hr.divider {
+        width: 75%;
+    }
+    .work {
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .news-bar {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .button {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    hr.divider {
+        width: 100%;
+    }
+    .work {
+        text-align: left;
+    }
 }
