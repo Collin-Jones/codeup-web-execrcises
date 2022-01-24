@@ -459,20 +459,25 @@
 //
 // let bugs = ["mosquito", "ant", "scorpion", "ant", "ant", "mosquito", "typo", "reference error", "type error"];
 // console.log(removeAll(bugs, "ant"));
+//
+// function getNthCat(cat, i){
+//     return cat[i]
+// }
+// let catNames = [
+//     {
+//         name: "Orange"
+//     },
+//     {
+//         name : "Shadow"
+//     }
+// ]
 
-function getNthCat(cat, i){
-    return cat[i]
-}
-let catNames = [
-    {
-        name: "Orange"
-    },
-    {
-        name : "Shadow"
-    }
-]
-
-
-
-
+// function reverseString(str){
+// let string = "";
+//     for (let i = str.length-1; i >= 0; i++) {
+//         return string += str[i]
+//     }
+// }
+//
+// console.log(reverseString("Tarkov"))
 
