@@ -1,3 +1,6 @@
+/*<!--Just copying so I can make changes in real time and also so I can get some practice typing it out-->*/
+
+
 body {
     background-color: #E6E6E6;
 }
@@ -35,6 +38,20 @@ h1, h2, h3, h4, h5, h6 {
     width: 105px;
 }
 
+.xs-top-nav div:nth-of-type(2) p{
+    font-size: 220%;
+}
+
+.xs-top-nav div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+}
+
+.xs-top-nav div:nth-of-type(3) ul{
+    width: 70%;
+    font-size: 80%;
+}
+
 .xs-top-nav ul {
     list-style: none;
     padding-left: 0;
@@ -52,10 +69,72 @@ h1, h2, h3, h4, h5, h6 {
     padding: .2em;
 }
 
-.button{
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F0F0F0;
+    border: 6px solid #F0F0F0;
+    border-radius: 50%;
     height: 105px;
     width: 105px;
-    border-color: #F0F0F0;
+    margin: .5em;
+}
+
+.button h4 {
+    margin: 0;
+}
+
+.btn-red {
+    background-color: #E6563B;
+}
+
+.btn-orange {
+    background-color: #EB9D3A;
+}
+
+.btn-green {
+    background-color: #7CB06C;
+}
+
+.btn-blue {
+    background-color: #00ABA9
+}
+
+.work {
+    margin-top: 5em;
+    text-align: center;
+}
+
+.icon {
+    height: 18px;
+    width: 18px;
     border-radius: 50%;
     display: inline-block;
+    text-align: center;
+    margin: 0 .2em;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects p {
+    margin-right: auto;
+}
+
+.apple-img {
+    width: 98%;
+    border: 8px solid #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: .5em;
 }
