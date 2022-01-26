@@ -339,7 +339,7 @@
 
 
 // Objects Lecture
-"use strict";
+// "use strict";
 
 // let car1 = {};
 // car1.make = "Volkswagen";
