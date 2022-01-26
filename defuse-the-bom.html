@@ -5,7 +5,8 @@
     <title>Defuse the bom</title>
 </head>
 <body>
-<html><head>
+<html>
+<head>
     <meta charset="utf-8">
     <title>Defuse the BOM</title>
 </head>
@@ -15,27 +16,26 @@
 <button id="defuser">Defuse the BOM</button>
 
 <script>
-    (function() {
+    (function () {
         "use strict";
 
-        var detonationTimer = 5;
+        let detonationTimer = 5;
 
         // TODO: This function needs to be called once every second
         function updateTimer() {
-            if (detonationTimer >= 0) {
+            if (detonationTimer === 0) {
                 alert('EXTERMINATE!');
                 document.body.innerHTML = '';
             } else if (detonationTimer > 0) {
                 document.getElementById('timer').innerHTML = detonationTimer;
             }
             detonationTimer--;
-
         }
-
+        let interval = setInterval(updateTimer, 1000)
         // TODO: When this function runs, it needs to
         // cancel the interval/timeout for updateTimer()
         function defuseTheBOM() {
-
+            clearInterval(interval)
         }
 
         // Don't modify anything below this line!
@@ -49,6 +49,7 @@
 </script>
 
 
-</body></html>
+</body>
+</html>
 </body>
 </html>
