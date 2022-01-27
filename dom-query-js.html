@@ -9,6 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM: Query and Modify</title>
+    <link rel="stylesheet" href="css/dom-query.css">
 </head>
 <body>
 
@@ -92,6 +93,11 @@
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         let subParagraphs = document.getElementsByClassName('sub-paragraph');
 
+        let btn4 = document.getElementById("Mission-Accomplished");
+        let missionAccomplished = function (){
+            subParagraphs[0].innerHTML = "Mission Accomplished!"
+        }
+        btn4.addEventListener('click', missionAccomplished)
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         // subParagraphs[0].innerHTML = "Mission Accomplished!";
     })();
