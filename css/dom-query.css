@@ -1,15 +1,16 @@
 body{
     background-color: grey;
+    font-family: cursive;
 }
 
 h1, h2{
-    color: white;
+    color: black;
 }
 
 ul{
-    color: white;
+    color: black;
 }
 
 p{
-    color: white;
+    color: black;
 }
