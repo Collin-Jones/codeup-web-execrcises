@@ -12,6 +12,11 @@
 </head>
 <body>
 
+<button id="change-main-header">Change Header</button>
+<button id="blue-header">Change Subheader</button>
+<button id="change-li">Change li's</button>
+<button id="Mission-Accomplished">Mission Accomplished</button>
+
 <h1 id="main-header">Hello World!</h1>
 <ul>
     <li data-dbid="1">Item 1</li>
@@ -37,33 +42,58 @@
         // TODO: Uncomment next line and get the main header element by id
         let mainHeader = document.getElementById('main-header');
 
+        let btn1 = document.getElementById("change-main-header");
+        let changeHeader = function () {
+            mainHeader.innerHTML = "JavaScript is Cool"
+        };
+        btn1.addEventListener('click', changeHeader)
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "JavaScript is Cool"
+        // mainHeader.innerHTML = "JavaScript is Cool"
         // TODO: Uncomment the next line and get the sub header element by id
         let subHeader = document.getElementById('sub-header');
 
+        let btn2 = document.getElementById("blue-header");
+        let changeHeader2 = function () {
+            subHeader.style.color = 'blue'
+        };
+        btn2.addEventListener('click', changeHeader2)
         // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = 'blue'
+        // subHeader.style.color = 'blue'
+
         // TODO: Uncomment the next line and get all list items
         let listItems = document.getElementsByTagName('li');
 
-        // TODO: Set text color on every other list item to grey
-        // TODO: Set text color of li with dbid = 1 to blue
-        for (let i = 0; i < listItems.length; i++) {
-            let lidbId1 = listItems[i].getAttribute("data-dbid");
+        let btn3 = document.getElementById('change-li');
+        let changeList = function () {
+            for (let i = 0; i < listItems.length; i++) {
+                let lidbId1 = listItems[i].getAttribute("data-dbid");
 
-            if (i % 2 !== 0) {
-                listItems[i].style.color = 'grey';
-            }
-            if (lidbId1 === '1'){
-                listItems[0].style.color = 'blue';
+                if (i % 2 !== 0) {
+                    listItems[i].style.color = 'grey';
+                }
+                if (lidbId1 === '1') {
+                    listItems[0].style.color = 'blue';
+                }
             }
         }
+        btn3.addEventListener('click', changeList)
+        // TODO: Set text color on every other list item to grey
+        // TODO: Set text color of li with dbid = 1 to blue
+        // for (let i = 0; i < listItems.length; i++) {
+        //     let lidbId1 = listItems[i].getAttribute("data-dbid");
+        //
+        //     if (i % 2 !== 0) {
+        //         listItems[i].style.color = 'grey';
+        //     }
+        //     if (lidbId1 === '1') {
+        //         listItems[0].style.color = 'blue';
+        //     }
+        // }
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         let subParagraphs = document.getElementsByClassName('sub-paragraph');
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerHTML = "Mission Accomplished!"
+        // subParagraphs[0].innerHTML = "Mission Accomplished!";
     })();
 </script>
 
