@@ -1,4 +1,3 @@
-
 // Maths!
 //     Write a function called add(num1, num2) which returns the sum of num1 and num2
 // Write a function named square(numToSqr) which takes in a number (numToSqr) and returns the number multiplied by itself
@@ -513,8 +512,24 @@
 //
 // console.log(findAverage([95, 74, 86, 100]));
 
-function sumOfSquares(a, b){
-    return (a * a) + (b * b);
+// function sumOfSquares(a, b){
+//     return (a * a) + (b * b);
+// }
+//
+// console.log(sumOfSquares(4, 2))
+
+
+function whichStringIsLonger(x, y) {
+    if (typeof x !== "string") {
+        return false;
+    }
+    if (x.length > y.length) {
+        return "first";
+    }
+    if (y.length > x.length) {
+        return "second";
+    }
+    return "neither"
 }
 
-console.log(sumOfSquares(4, 2))
+console.log(whichStringIsLonger("bobby", "low"))
