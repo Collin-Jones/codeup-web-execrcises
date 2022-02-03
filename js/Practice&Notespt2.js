@@ -519,17 +519,19 @@
 // console.log(sumOfSquares(4, 2))
 
 
-function whichStringIsLonger(x, y) {
-    if (typeof x !== "string") {
-        return false;
-    }
-    if (x.length > y.length) {
-        return "first";
-    }
-    if (y.length > x.length) {
-        return "second";
-    }
-    return "neither"
-}
+// function whichStringIsLonger(x, y) {
+//     if (typeof x !== "string") {
+//         return false;
+//     }
+//     if (x.length > y.length) {
+//         return "first";
+//     }
+//     if (y.length > x.length) {
+//         return "second";
+//     }
+//     return "neither"
+// }
+//
+// console.log(whichStringIsLonger("bobby", "low"))
 
-console.log(whichStringIsLonger("bobby", "low"))
+
