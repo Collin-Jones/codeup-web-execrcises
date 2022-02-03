@@ -1,7 +1,11 @@
 "use strict";
 
-$(document).ready(function() {
+// $(document).ready(function() {
+//
+//
+// });
 
-    // INSERT JAVASCRIPT CODE SAMPLE HERE
+$('li').css('font-size', '30px')
 
-});
+var welcome = $('#welcome').html();
+alert(welcome)
