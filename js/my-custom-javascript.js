@@ -10,6 +10,10 @@ $('p').css('font-size', '20')
 let welcome = $('#welcome').html();
 alert(welcome)
 
+$('#items-you-need').dblclick(function(e) {
+    $('p').css('font-size', '18px')
+
+});
 
 
 
@@ -29,10 +33,7 @@ $('#ammo').click(function (){
     window.location.href = 'https://escapefromtarkov.fandom.com/wiki/.45_ACP_RIP';    // Send browser to url
 });
 
-$('#items-you-need').dblclick(function(e) {
-    $('p').css('font-size', '18px')
 
-});
 
 
 
