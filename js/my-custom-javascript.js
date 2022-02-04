@@ -39,10 +39,10 @@ $('#ammo').click(function (){
 
 $('#helmet').hover(
     function() {
-        $(this).css('font-color', '#FF0000');
+        $(this).css('color', '#FF0000');
     },
     function() {
-        $(this).css('background-color', '#FFF');
+        $(this).css('color', '#000000');
     }
 );
 
