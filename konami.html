@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script src="/js/jquery.js"></script>
+<script>
+    "use strict";
+    // "↑ ↑ ↓ ↓ ← → ← → b a enter"
+    $(document).keyup(function (event) {
+        const cheatCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13]
+        let current = 0;
+        let keyHandler = function (event) {
+            if (cheatCode.indexOf(event.key) < 0 || event.key !== [current]) {
+                current = 0;
+                return;
+            }
+            if (cheatCode.length === current) {
+                current = 0;
+                alert('You found it!');
+            }
+        }
+
+        console.log(event.keyCode);
+        document.addEventListener('keydown', keyHandler, false);
+    });
+</script>
+</body>
+</html>
