@@ -29,9 +29,16 @@ $('#ammo').click(function (){
     window.location.href = 'https://escapefromtarkov.fandom.com/wiki/.45_ACP_RIP';    // Send browser to url
 });
 
+$('#items-you-need').dblclick(function(e) {
+    $('p').css('font-size', '18px')
+
+});
+
+
+
 $('#helmet').hover(
     function() {
-        $(this).css('background-color', '#FF0');
+        $(this).css('font-color', '#FF0000');
     },
     function() {
         $(this).css('background-color', '#FFF');
