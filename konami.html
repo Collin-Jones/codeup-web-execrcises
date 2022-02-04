@@ -2,30 +2,43 @@
 <html>
 <head>
     <title>Konami Code</title>
+    <style>
+        iframe{
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    </style>
 </head>
 <body>
 <h1>Konami Code</h1>
 
-<script src="/js/jquery.js"></script>
+<script src="/js/jquery-2.2.4.js"></script>
 <script>
     "use strict";
     // "↑ ↑ ↓ ↓ ← → ← → b a enter"
+    const cheatCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13]
+    let current = 0;
     $(document).keyup(function (event) {
-        const cheatCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13]
-        let current = 0;
-        let keyHandler = function (event) {
-            if (cheatCode.indexOf(event.key) < 0 || event.key !== [current]) {
+            if (event.keyCode !== cheatCode[current]) {
                 current = 0;
-                return;
+                console.log(current)
+            }
+            if (cheatCode[current] === event.keyCode) {
+                current++;
+                console.log(current)
             }
             if (cheatCode.length === current) {
                 current = 0;
-                alert('You found it!');
+                $('body').html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/-ZGlaAxB7nI?autoplay=1&controls=0"
+                                       title="YouTube video player" frameBorder="0"
+                                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                       allowFullScreen></iframe>`)
             }
-        }
 
         console.log(event.keyCode);
-        document.addEventListener('keydown', keyHandler, false);
     });
 </script>
 </body>
