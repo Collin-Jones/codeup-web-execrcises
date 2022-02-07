@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
     <title>Online Store</title>
 </head>
 <body>
 
 <h1>My Tool Store</h1>
 
-<table id="products">
-    <thead>
-    <tr>
-        <th>Title</th>
-        <th>Quantity</th>
-        <th>Price</th>
-        <th>Categories</th>
-    </tr>
-    </thead>
-    <tbody id="insertProducts"></tbody>
-</table>
+<div class="rTable">
+    <div class="rTableHeading">
+        <div class="rTableRow">
+            <div class="rTableHead">Title</div>
+            <div class="rTableHead">Quantity</div>
+            <div class="rTableHead">Price</div>
+            <div class="rTableHead">Categories</div>
+        </div>
+    </div>
+    <div class="rTableBody"></div>
+</div>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script>
-    (function() {
+    (function () {
         "use strict";
         // TODO: Create an AJAX GET request for the file under data/inventory.json
 
@@ -33,5 +35,5 @@
 </script>
 
 
-
-</body></html>
+</body>
+</html>
