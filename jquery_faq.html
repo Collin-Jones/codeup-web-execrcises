@@ -16,7 +16,9 @@
             font-weight: bold;
         }
 
-
+        .listBlue{
+            color: blue;
+        }
     </style>
 </head>
 
@@ -167,14 +169,15 @@
             $('ul li:last-child').toggleClass('highlighted');
         });
 
-        $('.answers').click(function () {
-            $('li').toggleClass('invisible');
-        });
-
         $('h3').click(function () {
             $(this).next().slideToggle();
         });
 
+        $('li').click(function (){
+            let theList = $(this).parent();
+            let listItems = theList.children();
+            listItems.first().toggleClass('listBlue')
+        });
     });
 </script>
 </body>
