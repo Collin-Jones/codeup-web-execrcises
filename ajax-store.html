@@ -3,27 +3,41 @@
 <head>
     <title>Online Store</title>
     <style>
-        h1{
+        h1 {
             text-align: center;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+           align-content: space-between;
+        }
+        #products{
+            border: solid blue 1px;
+        }
+        #refresh{
+            display: flex;
+            justify-content: center;
+            margin: auto;
         }
     </style>
 </head>
 <body>
 
 <h1>My Tool Store</h1>
-<div class="table100-body js-pscroll ps ps--active-y"></div>
-<table id="products">
-    <thead>
-    <tr>
-        <th>Title</th>
-        <th>Quantity</th>
-        <th>Price</th>
-        <th>Categories</th>
-    </tr>
-    </thead>
-    <tbody id="insertProducts"></tbody>
-</table>
-
+<div id="container">
+    <table id="products">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Categories</th>
+        </tr>
+        </thead>
+        <tbody id="insertProducts"></tbody>
+    </table>
+</div>
 <button id="refresh">Refresh</button>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
