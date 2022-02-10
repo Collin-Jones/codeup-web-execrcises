@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+  <style>
+    body { margin: 6px; padding: 0; }
+    #map { position: absolute; top: 50px; bottom: 0; width: 100%; }
+  </style>
+  <meta charset="UTF-8">
+  <title>Weather Map</title>
+
+  <script src="/js/jquery-2.2.4.js"></script>
+</head>
+<body>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+<script src="js/geocode-map.js"></script>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
+
+<div id='map' style='width: 1500px; height: 600px;'></div>
+<!--html body goes here-->
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+<script src="https://kit.fontawesome.com/99fe95afd3.js" crossorigin="anonymous"></script>
+
+<nav id="top-blue-bar" class="text-white bg-primary p-1 nav">
+  <h2 class="nav-link">Weather Map</h2>
+
+</nav>
+
+<script>
+
+  mapboxgl.accessToken = 'pk.eyJ1IjoidGhldGFjbzUwIiwiYSI6ImNremVmMmZpbTJ5YzMycnByb2VpcmYyMW4ifQ.Ehx__zRSg-2ZvDwaTIzDuw';
+  const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-74.5, 40], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+  });
+  map.addControl(
+          new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            mapboxgl: mapboxgl
+          })
+  );
+
+
+
+</script>
+</body>
+</html>
