@@ -37,6 +37,33 @@
             mapboxgl: mapboxgl
         })
     );
+    async function addRestaurant(restAddress){
+        let restCords = await geocode(restAddress , mapboxgl.accessToken)
+        // console.log(restCords)
+        // Create a new marker.
+        const marker = new mapboxgl.Marker()
+            .setLngLat(restCords)
+            .addTo(map);
+        map.setCenter(restCords)
+
+        let popup = new mapboxgl.Popup()
+            .setLngLat(restCords)
+            .setHTML(`<p>${restAddress}</p>`);
+            // .addTo(map);
+        marker.setPopup(popup)
+    }
+    // addRestaurant('Sushi Sake Richardson TX')
+    // addRestaurant('Chipotle Frisco TX')
+    // addRestaurant('Smoothie King Frisco TX')
+
+    let myRestaurants = ['Sushi Sake Richardson TX', 'Chipotle Frisco TX', 'Smoothie King Frisco TX']
+    myRestaurants.forEach(function (singleRestaurant){
+        addRestaurant(singleRestaurant)
+    });
+
+
+
+
 </script>
 </body>
 </html>
