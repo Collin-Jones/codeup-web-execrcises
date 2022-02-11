@@ -80,7 +80,7 @@
         accessToken: mapboxgl.accessToken,
         mapboxgl: mapboxgl,
 
-    })
+    });
     geocode2.addTo(map)
     geocode2.on('result', function (e) {
         console.log(e)
@@ -121,8 +121,8 @@
         $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${e.lngLat.lat}&lon=${e.lngLat.lng}&exclude=hourly,minutely&appid=${OPEN_WEATHER_KEY}&units=imperial`)
             .done(function (data) {
                 console.log(data);
+                $("#weather-tabs").html("")
                 for (let i = 0; i < 5; i++) {
-                    // if ()
                     let html = ''
                     html += `<div class="card">
                 <div class="card-header">date</div>
@@ -134,7 +134,6 @@
                 </ul>
             </div>`
 
-                    $("#weather-tabs").html("")
                     $("#weather-tabs").append(html)
                 }
             });
