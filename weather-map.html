@@ -75,12 +75,18 @@
         center: [-74.5, 40], // starting position [lng, lat]
         zoom: 9 // starting zoom
     });
-    map.addControl(
-        new MapboxGeocoder({
-            accessToken: mapboxgl.accessToken,
-            mapboxgl: mapboxgl
-        })
-    );
+
+    let geocode2 = new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl,
+
+    })
+    geocode2.addTo(map)
+    geocode2.on('result', function (e) {
+        console.log(e)
+        marker1(e.center)
+    });
+
     let lat = 40
     let lon = -74.5
     $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&appid=${OPEN_WEATHER_KEY}&units=imperial`)
@@ -101,6 +107,38 @@
             }
         });
 
+    function marker1(point) {
+        $('.mapboxgl-marker').remove()
+        const marker = new mapboxgl.Marker()
+            .setLngLat(point)
+            .addTo(map);
+        map.setCenter(point)
+    }
+
+    map.on('click', function (e) {
+        console.log(e)
+        marker1(e.lngLat)
+        $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${e.lngLat.lat}&lon=${e.lngLat.lng}&exclude=hourly,minutely&appid=${OPEN_WEATHER_KEY}&units=imperial`)
+            .done(function (data) {
+                console.log(data);
+                for (let i = 0; i < 5; i++) {
+                    // if ()
+                    let html = ''
+                    html += `<div class="card">
+                <div class="card-header">date</div>
+                <ul class="list-group">
+                    <li class="list-group-item">Dew Point : ${data.daily[i].dew_point}</li>
+                    <li class="list-group-item">Humidity : ${data.daily[i].humidity}</li>
+                    <li class="list-group-item">Pressure : ${data.daily[i].pressure}</li>
+                    <li class="list-group-item">Temp : ${data.daily[i].temp.day}</li>
+                </ul>
+            </div>`
+
+                    $("#weather-tabs").html("")
+                    $("#weather-tabs").append(html)
+                }
+            });
+    });
 
 </script>
 </body>
