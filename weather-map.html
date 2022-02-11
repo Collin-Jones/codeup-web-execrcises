@@ -13,6 +13,7 @@
     <link rel="stylesheet"
           href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
           type="text/css">
+    <link rel="stylesheet" href="css/weather-map.css">
 
     <style>
         body {
@@ -79,33 +80,40 @@
     let geocode2 = new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
         mapboxgl: mapboxgl,
-
-    });
-    geocode2.addTo(map)
-    geocode2.on('result', function (e) {
-        console.log(e)
-        marker1(e.center)
+        marker: true
     });
 
-    let lat = 40
-    let lon = -74.5
-    $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&appid=${OPEN_WEATHER_KEY}&units=imperial`)
-        .done(function (data) {
-            console.log(data);
-            for (let i = 0; i < 5; i++) {
-                var html = ''
-                html += `<div class="card">
-                <div class="card-header">date</div>
+    function getRequest(lat, lon) {
+        $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&appid=${OPEN_WEATHER_KEY}&units=imperial`)
+            .done(function (data) {
+                console.log(data);
+                $("#weather-tabs").html("")
+                for (let i = 0; i < 5; i++) {
+                    let unix_timestamp = data.daily[i].dt;
+                    let date = new Date(unix_timestamp * 1000).toLocaleDateString();
+
+                    let html = ''
+                    html += `<div class="card">
+                <div class="card-header">Date : ${date}</div>
                 <ul class="list-group">
+                    <li class="list-group-item">Temp : ${data.daily[i].temp.day}</li>
                     <li class="list-group-item">Dew Point : ${data.daily[i].dew_point}</li>
                     <li class="list-group-item">Humidity : ${data.daily[i].humidity}</li>
                     <li class="list-group-item">Pressure : ${data.daily[i].pressure}</li>
-                    <li class="list-group-item">Temp : ${data.daily[i].temp.day}</li>
                 </ul>
             </div>`
-                $("#weather-tabs").append(html)
-            }
-        });
+
+                    $("#weather-tabs").append(html)
+                }
+            });
+    }
+
+    geocode2.addTo(map)
+    geocode2.on('result', function (e) {
+        getRequest(e.result.center[1], e.result.center[0])
+        console.log(e)
+        // marker1(e.center)
+    });
 
     function marker1(point) {
         $('.mapboxgl-marker').remove()
@@ -118,26 +126,9 @@
     map.on('click', function (e) {
         console.log(e)
         marker1(e.lngLat)
-        $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${e.lngLat.lat}&lon=${e.lngLat.lng}&exclude=hourly,minutely&appid=${OPEN_WEATHER_KEY}&units=imperial`)
-            .done(function (data) {
-                console.log(data);
-                $("#weather-tabs").html("")
-                for (let i = 0; i < 5; i++) {
-                    let html = ''
-                    html += `<div class="card">
-                <div class="card-header">date</div>
-                <ul class="list-group">
-                    <li class="list-group-item">Dew Point : ${data.daily[i].dew_point}</li>
-                    <li class="list-group-item">Humidity : ${data.daily[i].humidity}</li>
-                    <li class="list-group-item">Pressure : ${data.daily[i].pressure}</li>
-                    <li class="list-group-item">Temp : ${data.daily[i].temp.day}</li>
-                </ul>
-            </div>`
-
-                    $("#weather-tabs").append(html)
-                }
-            });
+        getRequest(e.lngLat.lat, e.lngLat.lng)
     });
+
 
 </script>
 </body>
