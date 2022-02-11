@@ -1,0 +1,19 @@
+#map {
+    width: 80%;
+    height: 600px;
+    position: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav h2 {
+    font-size: 25px;
+    justify-content: center;
+}
+
+.card {
+    width: 20%;
+}
