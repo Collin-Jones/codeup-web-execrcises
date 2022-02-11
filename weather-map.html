@@ -45,53 +45,7 @@
 </header>
 <main>
     <div id='map'></div>
-    <div id="weather-tabs" class="d-flex">
-        <div class="card">
-            <div class="card-header">date</div>
-            <ul class="list-group">
-                <li class="list-group-item">Weather</li>
-                <li class="list-group-item">Weather</li>
-                <li class="list-group-item">Weather</li>
-                <li class="list-group-item">Weather</li>
-            </ul>
-        </div>
-        <div class="card">
-            <div class="card-header">date</div>
-            <ul class="list-group">
-                <li class="list-group-item">Dew Point</li>
-                <li class="list-group-item">Humidity</li>
-                <li class="list-group-item">Pressure</li>
-                <li class="list-group-item">Temp</li>
-            </ul>
-        </div>
-        <div class="card">
-            <div class="card-header">date</div>
-            <ul class="list-group">
-                <li class="list-group-item">Dew Point</li>
-                <li class="list-group-item">Humidity</li>
-                <li class="list-group-item">Pressure</li>
-                <li class="list-group-item">Temp</li>
-            </ul>
-        </div>
-        <div class="card">
-            <div class="card-header">date</div>
-            <ul class="list-group">
-                <li class="list-group-item">Dew Point</li>
-                <li class="list-group-item">Humidity</li>
-                <li class="list-group-item">Pressure</li>
-                <li class="list-group-item">Temp</li>
-            </ul>
-        </div>
-        <div class="card">
-            <div class="card-header">date</div>
-            <ul class="list-group">
-                <li class="list-group-item">Dew Point</li>
-                <li class="list-group-item">Humidity</li>
-                <li class="list-group-item">Pressure</li>
-                <li class="list-group-item">Temp</li>
-            </ul>
-        </div>
-    </div>
+    <div id="weather-tabs" class="d-flex"></div>
 </main>
 <script src="/js/jquery-2.2.4.js"></script>
 
@@ -127,15 +81,26 @@
             mapboxgl: mapboxgl
         })
     );
-
-    $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=29.4241&lon=-98.4936&exclude=hourly,minutely&appid=${OPEN_WEATHER_KEY}&units=imperial`)
+    let lat = 40
+    let lon = -74.5
+    $.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&appid=${OPEN_WEATHER_KEY}&units=imperial`)
         .done(function (data) {
             console.log(data);
+            for (let i = 0; i < 5; i++) {
+                var html = ''
+                html += `<div class="card">
+                <div class="card-header">date</div>
+                <ul class="list-group">
+                    <li class="list-group-item">Dew Point : ${data.daily[i].dew_point}</li>
+                    <li class="list-group-item">Humidity : ${data.daily[i].humidity}</li>
+                    <li class="list-group-item">Pressure : ${data.daily[i].pressure}</li>
+                    <li class="list-group-item">Temp : ${data.daily[i].temp.day}</li>
+                </ul>
+            </div>`
+                $("#weather-tabs").append(html)
+            }
         });
-    let daily;
-    daily.dt = undefined;
-    let date = daily.dt
-    date.setDate(date.getDate() + 5);
+
 
 </script>
 </body>
