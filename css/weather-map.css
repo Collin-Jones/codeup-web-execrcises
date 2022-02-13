@@ -5,11 +5,16 @@
     margin-bottom: 10px;
 }
 
+#header{
+    text-decoration-color: lightgrey;
+}
+
+
 body {
     height: 100%;
     margin: 0;
     padding: 10px;
-    font-family: Verdana;
+    font-family: "Comic Sans MS";
     background-image: url("/image/clouds.jpg");
     background-size: cover;
 }
