@@ -3,6 +3,8 @@
     height: 600px;
     border-radius: 15px;
     margin-bottom: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
 }
 
 #header{
@@ -12,8 +14,8 @@
 
 body {
     height: 100%;
-    margin: 0;
-    padding: 10px;
+    margin: 15px;
+    padding-right: 50px;
     font-family: "Comic Sans MS";
     background-image: url("/image/clouds.jpg");
     background-size: cover;
@@ -29,6 +31,8 @@ nav h2 {
     justify-content: space-evenly;
     border-radius: 10px;
     background-color: lightgrey;
+    margin-right: 3px;
+    margin-left: 3px;
 }
 
 .card-header img{
