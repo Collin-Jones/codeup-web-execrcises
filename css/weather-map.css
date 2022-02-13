@@ -7,12 +7,12 @@
 
 body {
     margin: 0;
-    padding: 5px;
+    padding: 10px;
     font-family: Verdana;
 }
 
 nav h2 {
-    font-size: 25px;
+    font-size: 45px;
     justify-content: center;
 }
 
@@ -20,5 +20,15 @@ nav h2 {
     width: 20%;
     justify-content: space-evenly;
     border-radius: 10px;
+    background-color: lightgrey;
 }
+
+.card-header img{
+    width: 50px;
+}
+
+.list-group-item{
+    background-color: lightgrey;
+}
+
 
