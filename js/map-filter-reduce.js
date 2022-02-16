@@ -35,3 +35,14 @@ const users = [
         yearsOfExperience: 9
     }
 ];
+
+const threeLanguages = users.filter(user => user.languages.length >= 3);
+console.log(threeLanguages);
+
+const email = users.map(user => user.email);
+console.log(email)
+
+const totalYears = users.reduce((total, user) =>{
+    return total + user.yearsOfExperience
+});
+console.log(totalYears)
