@@ -46,3 +46,19 @@ const totalYears = users.reduce((total, user) =>{
     return total + user.yearsOfExperience
 });
 console.log(totalYears)
+
+const yearsOnAverage = totalYears / users.length;
+console.log(yearsOnAverage)
+
+const emailLength = users.reduce((longest, user) => {
+    return user.email.length > longest.length ? user.email : longest;
+});
+console.log(emailLength);
+
+const stringNames = users.reduce((names, user) => {
+    if (names !== ''){
+        names += ', ';
+    }
+    return names + user.name;
+});
+console.log(stringNames)
