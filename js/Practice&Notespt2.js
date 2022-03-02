@@ -547,3 +547,31 @@
 // }
 //
 // console.log(convertLowHighToObject('35, 42'));
+
+// function sayHello(name) {
+//     return 'Hello, ' + name + '!';
+// }
+
+// const sayHello = (name) => `Hello, ${name}!`
+// console.log(sayHello())
+
+// TODO Write a function called countDuplicates that takes in a string and returns an object that contains the count for each letter within the given string.
+//     ex: countDuplicates("adsjfdsfsfjsdjfhacabcsbajda")
+// returns { a: 5, d: 4, s: 5, j: 4, f: 4, h: 1, c: 2, b: 2 }
+
+// Morning exercise
+function countDuplicates(string) {
+    let countLetters = {};
+    let count = 1;
+
+    for (let i = 0; i < string.length; i++) {
+        if (!string[i] in countLetters) {
+            countLetters[string[i]] = count;
+        } else {
+            countLetters[string[i]] = countLetters[string[i]] + 1;
+        }
+    }
+    return countLetters;
+}
+
+console.log(countDuplicates('adsjfdsfsfjsdjfhacabcsbajda'))
