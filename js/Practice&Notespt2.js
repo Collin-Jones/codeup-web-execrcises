@@ -560,18 +560,49 @@
 // returns { a: 5, d: 4, s: 5, j: 4, f: 4, h: 1, c: 2, b: 2 }
 
 // Morning exercise
-function countDuplicates(string) {
-    let countLetters = {};
-    let count = 1;
+// function countDuplicates(string) {
+//     let countLetters = {};
+//     let count = 1;
+//
+//     for (let i = 0; i < string.length; i++) {
+//         if (!string[i] in countLetters) {
+//             countLetters[string[i]] = count;
+//         } else {
+//             countLetters[string[i]] = countLetters[string[i]] + 1;
+//         }
+//     }
+//     return countLetters;
+// }
+//
+// console.log(countDuplicates('adsjfdsfsfjsdjfhacabcsbajda'))
 
-    for (let i = 0; i < string.length; i++) {
-        if (!string[i] in countLetters) {
-            countLetters[string[i]] = count;
-        } else {
-            countLetters[string[i]] = countLetters[string[i]] + 1;
-        }
+//
+// Write a function called makePerson. It takes 2 arguments: personName and age.
+//     personName must be at least 1 character long. age must be between 1 and 150.
+// If either of the parameters is invalid, output an appropriate message to the console and return FALSE.
+//     If both parameters are valid, return an object containing personName and age.
+//     E.g.,
+//     console.log(makePerson("Bob", 30)); // outputs {personName:"Bob", age:30}
+// console.log(makePerson("", 30));
+// // outputs:
+// Person name cannot be blank
+// false
+
+
+function makePerson(personName, age){
+    if(personName.length === 0){
+        console.log("Must type something in.");
+        return false;
     }
-    return countLetters;
+    if(age < 1 || age > 150){
+        console.log("Age must between 1 to 150");
+        return false
+    }
+    return{
+        personName,
+        age
+    };
+
 }
 
-console.log(countDuplicates('adsjfdsfsfjsdjfhacabcsbajda'))
+console.log(makePerson("Collin", 25))
